@@ -1,0 +1,36 @@
+.icon-input-switch,
+.icon-input-switched {
+    width: 1.25em;
+    text-align: center;
+    @include Text-font-style($Grey, $PrimaryFont, normal, 900, 23px !important, 1);
+    cursor: pointer;
+}
+.icon-input-switched {
+    color: $BlackText;
+}
+.text-input-switch,
+.text-input-switched {
+    @include Text-font-style($Grey, $PrimaryFont, normal, 400, 0.875rem !important, 1.6);
+    cursor: pointer;
+}
+.text-input-switched {
+    color: $BlackText;
+}
+.input-number-switch {
+    height: calc(1.6em + 1.3rem);
+}
+.container-input-switch {
+    padding: 0.75rem 0;
+}
+.border-bottom-input-switch {
+    border-bottom: 2px solid $InputFilterBorder;
+}
+.no-wrap {
+    flex-wrap: nowrap !important;
+}
+.w-93px {
+    width: 93px;
+}
+.line-brek-anywehre {
+    line-break: strict;
+}

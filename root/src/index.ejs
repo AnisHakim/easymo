@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Easymo</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI1LjIuMywgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhbHF1ZV8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB2aWV3Qm94PSIwIDAgNDYgNDYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ2IDQ2OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6IzM3N0RGRjt9Cgkuc3Qxe2ZpbGw6IzQ3N0ZGNjt9Cjwvc3R5bGU+CjxnPgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTM5LjEsMTguOGMtMC42LTMuOS00LTYuOC04LTYuOGMtMS41LDAtMywwLjQtNC4yLDEuMkMyNC45LDEwLDIxLjUsOCwxNy42LDhDMTEuNyw4LDYuOCwxMi44LDYuOCwxOC43CgkJYzAsMCwwLDAuMSwwLDAuMWMtMy44LDAuNi02LjgsNC02LjgsOGMwLDQuNSwzLjcsOC4xLDguMiw4LjFIMTVjMC0wLjEsMC0wLjEsMC0wLjJ2LTYuMWgtMC4zYzAsMCwwLDAtMC4xLDAKCQljLTAuNSwwLTAuOS0wLjItMS4yLTAuNWMtMC43LTAuNy0wLjctMS45LDAtMi42bDAsMGw4LjMtOC4zYzAuNC0wLjQsMC44LTAuNSwxLjMtMC41czEsMC4yLDEuMywwLjVsOC4zLDguM2wwLDAKCQljMC43LDAuNywwLjcsMS45LDAsMi42Yy0wLjMsMC40LTAuOCwwLjUtMS4zLDAuNUgzMXY2LjFjMCwwLjEsMCwwLjEsMCwwLjJoNi44YzQuNSwwLDguMi0zLjYsOC4yLTguMUM0NiwyMi44LDQyLjksMTkuNCwzOS4xLDE4LjgKCQl6Ii8+Cgk8cGF0aCBjbGFzcz0ic3QxIiBkPSJNMjQsMzAuNkgyMmMtMC41LDAtMSwwLjUtMSwxdjMuNEgyNXYtMy40QzI1LDMxLDI0LjUsMzAuNiwyNCwzMC42eiIvPgo8L2c+Cjwvc3ZnPgo=
+  ">
+  <!--
+    Remove this if you only support browsers that support async/await.
+    This is needed by babel to share largeish helper code for compiling async/await in older
+    browsers. More information at https://github.com/single-spa/create-single-spa/issues/112
+  -->
+  <script src="https://cdn.jsdelivr.net/npm/regenerator-runtime@0.13.7/runtime.min.js"></script>
+  <!--
+    This CSP allows any SSL-enabled host and for arbitrary eval(), but you should limit these directives further to increase your app's security.
+    Learn more about CSP policies at https://content-security-policy.com/#directive
+  -->
+  <meta http-equiv="Content-Security-Policy" content="
+  script-src 'unsafe-inline' 'unsafe-eval' http: 51.77.141.51:*;
+  connect-src  https: localhost:*  http: 51.77.141.51:* ws://*:*;
+  style-src 'unsafe-inline' https:; object-src 'none';">
+  <meta name="importmap-type" content="systemjs-importmap" />
+  <!-- If you wish to turn off import-map-overrides for specific environments (prod), uncomment the line below -->
+  <!-- More info at https://github.com/joeldenning/import-map-overrides/blob/master/docs/configuration.md#domain-list -->
+  <!-- <meta name="import-map-overrides-domains" content="denylist:prod.example.com" /> -->
+  <!-- Shared dependencies go into this import map. Your shared dependencies must be of one of the following formats:
+    1. System.register (preferred when possible) - https://github.com/systemjs/systemjs/blob/master/docs/system-register.md
+    2. UMD - https://github.com/umdjs/umd
+    3. Global variable
+    More information about shared dependencies can be found at https://single-spa.js.org/docs/recommended-setup#sharing-with-import-maps.
+  -->
+  <script type="systemjs-importmap">
+    {
+      "imports": {
+        "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js"
+      }
+    }
+  </script>
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js" as="script">
+  <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+  <!-- Add your organization's prod import map URL to this script's src  -->
+  <!-- <script type="systemjs-importmap" src="/importmap.json"></script> -->
+  <script type="systemjs-importmap">
+    {
+      "imports": {
+        "@easymo/root-config":"//devs.easymo.pixi.tn/easymo-root-config.js",
+        "@easymo/designSystem":"//devs.designsystem.easymo.pixi.tn/easymo-designSystem.js",
+        "@easymo/auth":"//devs.auth.easymo.pixi.tn/easymo-auth.js",
+        "@easymo/properties":"//devs.properties.easymo.pixi.tn/easymo-properties.js",
+        "@easymo/signup":"//devs.signup.easymo.pixi.tn/easymo-signup.js",
+        "react":"https://unpkg.com/react@17.0.2/umd/react.development.js",
+        "react-dom":"https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js",
+        "react-bootstrap":"https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
+      }
+    }
+  </script>
+  <!--
+    If you need to support Angular applications, uncomment the script tag below to ensure only one instance of ZoneJS is loaded
+    Learn more about why at https://single-spa.js.org/docs/ecosystem-angular/#zonejs
+  -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/zone.js@0.11.3/dist/zone.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/import-map-overrides@2.2.0/dist/import-map-overrides.js"></script>
+  <% if (isLocal) { %>
+    <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/system.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/extras/amd.js"></script>
+    <% } else { %>
+      <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/system.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/extras/amd.min.js"></script>
+      <% } %>
+        <script
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXVOdVNksCwVAYHWSPmZJPPeIxbfc0Ziw&libraries=places"></script>
+</head>
+
+<body>
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
+  <script>
+    System.import('@easymo/root-config');
+  </script>
+  <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full>
+</body>
+
+</html>

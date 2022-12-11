@@ -1,0 +1,75 @@
+.default-img {
+  width: 100%;
+  @extend .h-auto;
+}
+.avatar-img {
+  border-radius: 50%;
+  width: 2.1875rem;
+  height: 2.1875rem;
+}
+.full-img {
+  @extend .w-100;
+  @extend .h-100;
+}
+.large-logo-img {
+  width: 12rem;
+  @extend .h-auto;
+}
+.medium-logo-img {
+  width: 6.5rem;
+  @extend .h-auto;
+}
+.larg-logo-img {
+  width: 12rem;
+  @extend .h-auto;
+}
+.container-check label {
+  @include Text-font-style($Grey, $PrimaryFont, null, 400, 0.8125rem, null);
+}
+.img-txt-logo {
+  position: relative;
+  display: inline-block;
+  width: 2.625rem;
+  height: 2.625rem;
+  border-radius: 0.3125rem;
+  object-fit: cover;
+}
+
+.small-square-img {
+  position: relative;
+  display: inline-block;
+  width: 2.625rem;
+  height: 2.625rem !important;
+  @include border-radius(0.3125rem);
+}
+.modal-add-property-img {
+  padding: 5px;
+  max-width: 52%;
+  height: auto;
+  vertical-align: middle;
+  border-style: none;
+  cursor: pointer;
+}
+.container-marker-map {
+  width: 40px;
+  height: 40px;
+}
+.text-marker-map {
+  @include Text-font-style($Red, $PrimaryFont, normal, bold, 15px, 1.5);
+  @include truncate-text-horizontal(100%);
+  max-width: 100px;
+}
+.top-position-icon {
+  top: 10px;
+}
+.width-container-pointer {
+  width: 150px;
+}
+.full-screnn-img {
+  width: 100vw !important;
+  height: auto !important;
+  max-height: 100vh;
+}
+.img-cover{
+  object-fit: cover;
+}

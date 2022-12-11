@@ -1,0 +1,32 @@
+@media screen and (min-width: 992px) {
+  .col-description-sing-up {
+    display: flex;
+  }
+  .street-adress-container-col {
+    padding-left: 0;
+    padding-right: 0.25rem;
+  }
+  .street-number-container-col {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    input {
+      padding: 0;
+      height: 54px;
+      text-align: center;
+    }
+  }
+  .street-code-container-col {
+    padding-left: 0.25rem;
+    padding-right: 0;
+  }
+  .signup-logo {
+    top: 1rem;
+    left: 1rem;
+    min-width: 12rem;
+    padding: 0;
+    vertical-align: middle;
+  }
+  .stepper-container {
+    padding-top: 3rem;
+  }
+}

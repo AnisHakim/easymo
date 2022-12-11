@@ -1,0 +1,102 @@
+.modal-add-priximity-label {
+    @include Text-font-style($BlackText, $PrimaryFont, normal, 600, 1.2rem, 1.6);
+}
+.option-select-proximity {
+    height: 38px;
+}
+.option-select-proximity:hover {
+    .icon-select-type-proximity {
+        color: $BlackText;
+    }
+}
+.container-google-maps-proximity{
+    height: 450px;
+}
+.height-map-modal-proximity{
+    height: 350px;
+}
+.icon-table-proximity ,.icon-filter-proximity ,.icon-filter-selected-proximity {
+   width: 23px;
+   margin-right: 1rem;
+}
+.icon-filter-proximity {
+    color:$Grey;
+    margin-right: 0.25rem;
+}
+.icon-filter-selected-proximity {
+    color:$BlackText;
+    margin-right: 0.25rem;
+}
+.color-text-filter-proximity{
+    color:$Grey;
+}
+.color-text-selected-filter-proximity{
+    color:$BlackText;
+}
+.pointinterest-truncate {
+    @include truncate-text-horizontal(100%);
+    max-width: 300px;
+}
+.type-proxmity-text{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+.input-search-proximity {
+    height: calc(1.6em + 1.21875rem);
+    border: 0.0625rem solid $InputFilterBorder;
+    padding-left: 2.625rem;
+    @include border-radius(0.3125rem);
+    @include Text-font-style($BlackText, $PrimaryFont, normal, 400, 0.875rem !important, 1.6);
+}
+.description-autocomplete-googlemaps {
+    @include Text-font-style($BlackText, $PrimaryFont, normal, 400, 0.875rem, 1.6);
+}
+.suggestion-googlemaps-item {
+    cursor: pointer;
+    background-color: $transparentColor;
+}
+.suggestion-googlemaps-item:active,
+.suggestion-googlemaps-item:hover {
+    background-color: rgba($color: $ButtonBlue, $alpha: 0.3);
+}
+.input-search-proximity:focus,
+.input-search-proximity:focus-visible {
+    box-shadow: 0 0 10px rgb(55 125 255 / 10%) !important;
+    border-color: $BorderInputBlue !important;
+}
+
+.icon-header-proximity {
+    color: $Grey;
+    width: 1.3rem !important;
+    height: 1.3rem !important;
+}
+.containter-modal-add-proximity {
+    padding: 2.25rem;
+}
+.text-add-proxmity {
+    font-size: 1rem;
+}
+.color-label-modal-proximity {
+    color: $DarkGrey;
+}
+.modal-add-Proximity {
+    max-width: 550px;
+}
+
+@media (min-width: 576px) {
+    .modal-add-Proximity {
+        min-height: calc(100% - 3.5rem);
+    }
+}
+
+@media (min-width: 992px) {
+    .modal-add-Proximity {
+        max-width: 800px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .modal-add-Proximity {
+        max-width: 1140px;
+    }
+}

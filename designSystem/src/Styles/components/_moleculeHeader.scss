@@ -1,0 +1,29 @@
+.header-prop-text {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-bottom: 1rem;
+    list-style: none;
+    background-color: transparent;
+    border-radius: 0.3125rem;
+}
+
+.header-prop-text-item {
+    font-size: 0.8125rem;
+    color: $Grey;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    line-height: 20.8px;
+}
+.header-prop-text-item.active {
+    color: $BlackText;
+}
+.header-prop-text-item.link {
+    cursor: pointer;
+}
+.header-prop-text-item.link:hover {
+    color: $ButtonBlue;
+}
+.document-path-text{
+    font-size: 0.9rem;
+}

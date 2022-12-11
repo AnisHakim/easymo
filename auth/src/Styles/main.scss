@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+@import "abstracts/mixin";
+@import "abstracts/variable";
+//style for molecules
+@import "Component/login", "Component/forgetPswd";
+@import "BreakPoints/small.scss", "BreakPoints/medium.scss", "BreakPoints/larg.scss", "BreakPoints/xlarge.scss",
+    "BreakPoints/xxlarge.scss";
+//style for organisms
+// 3. Break point
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(../assets/font/OpenSans/OpenSans-Regular.eot);
+    src: url(../assets/font/OpenSans/OpenSans-Regular.eot?#iefix) format("embedded-opentype"),
+        url(../assets/font/OpenSans/OpenSans-Regular.woff2) format("woff2"),
+        url(../assets/font/OpenSans/OpenSans-Regular.woff) format("woff"),
+        url(../assets/font/OpenSans/OpenSans-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

@@ -1,0 +1,126 @@
+.folder-container{
+    padding: 1rem;
+    height: 67px;
+}
+.folder-container-view{
+    width: calc(100% - 40px);
+}
+.min-folder-container{
+    min-height: 67px;
+    padding: 1rem;
+}
+.default-folder-icon{
+    height: 28px;
+    width: 28px;
+    color: $DarkGrey;
+}
+.default-folder-title{
+    @include Text-font-style($BlackText, $PrimaryFont, normal, 600, 0.875rem, 1.6);
+    @include truncate-text-horizontal(100%);
+}
+.default-file-title{
+    @include truncate-text-horizontal(100%);
+    max-width: 140px;
+}
+
+.file-user{
+    height: 12.6px !important;
+    width: 12.8px !important;
+    color: $DarkGrey;
+}
+.text-username{
+    @include Text-font-style($DarkGrey, $PrimaryFont, normal, 400, 0.76rem, 1.6);  
+}
+.file-image{
+    width: 56px;
+    height: 42px;
+    svg{
+        height: 100%;
+        width: auto;
+    }
+}
+.row-file-image{
+    width: 32px;
+    height: 24px;
+    svg{
+        height: 100%;
+        width: auto;
+    }
+}
+.historique-document-image{
+    width: 35px;
+    height: 35px;
+    svg{
+        height: 100%;
+        width: auto;
+    }
+}
+.file-title{
+    @include Text-font-style($BlackColor, $PrimaryFont, normal, 600, 1rem, 1.4);  
+}
+.document-change-container{
+    background-color: $backgroundDisabledInput;
+    padding: 0.25rem 0.25rem;
+    border-radius: 0.3125rem;
+    width: 79.25px;
+}
+.column-button{
+    color: $BlackColor;
+    background-color: $WhiteColor;
+    box-shadow: 0px 3px 6px 0px rgb(140 152 164 / 25%);
+    font-size: 0.8125rem;
+    padding: 0.4375rem 0.65625rem;
+    border-radius: 0.3125rem;
+}
+.column-button-disabled{
+    color: $DarkGrey;
+    background-color: $backgroundDisabledInput;
+    box-shadow: transparent;
+    padding: 0.4375rem 0.65625rem;
+    border-radius: 0rem;
+}
+.column-button-disabled:hover{
+    color: $FilterBlue;
+}
+.column-button-icon{
+    height: 14.5px;
+    width: 14.5px;
+}
+.folder-row-view-container{
+    padding: 1.5rem 1.25rem;
+    background-color: $WhiteColor;
+    border: 0.0625rem solid $InputFilterBorder;
+    border-bottom: 0;
+    height: 85.5px;
+}
+.file-row-view-container{
+    padding: 0.75rem 1.25rem;
+    background-color: $WhiteColor;
+    border: 0.0625rem solid $InputFilterBorder;
+    border-bottom: 0;
+}
+.file-row-view{
+    width: calc(100% - 130px);
+}
+.folder-row-view-top-radius{
+    border-top-left-radius: 0.3125rem;
+    border-top-right-radius: 0.3125rem;
+}
+.folder-row-view-bottom-radius{
+    border-bottom-left-radius: 0.3125rem;
+    border-bottom-right-radius: 0.3125rem;
+    border-bottom: 0.0625rem solid $InputFilterBorder;
+}
+.folder-drop-down-container{
+    width: 208px;
+}
+.add-folder-drop-down-container{
+    margin-top: 0.625rem;
+}
+.min-folder-container:hover,
+.folder-container:hover{
+    box-shadow: 0px 6px 12px rgb(140 152 164 / 25%);
+}
+.default-file-title-row{
+    @include truncate-text-horizontal(100%);
+}

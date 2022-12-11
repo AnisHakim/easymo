@@ -1,0 +1,53 @@
+.label-tooltip {
+    max-width: 100px;
+}
+.tooltip-inner {
+    max-width: 200px;
+    padding: 0.2rem 0.9rem ;
+    text-align: center;
+    @include Text-font-style(
+        null,
+        $PrimaryFont ,
+        normal ,
+        400 ,
+        0.8125rem ,
+        1.6 
+    );
+    border-radius: 0.25rem ;
+    background-color: $SiderbarItemBlack;
+}
+.street-tooltip-public{
+    max-width: 220px;
+    padding: 0.2rem 0.4rem ;
+    text-align: center;
+    @include Text-font-style(
+        null,
+        $PrimaryFont ,
+        normal ,
+        400 ,
+        0.8125rem ,
+        1.6 
+    );
+    border-radius: 0.25rem ;
+    background-color: $SiderbarItemBlack;
+}
+.tooltip.show {
+    opacity: 1;
+    max-width: 200px;
+}
+.street-tooltip-public .tooltip-arrow {
+    bottom: -7px;
+    left: -6px !important;
+}
+.street-tooltip-public.tooltip.show {
+    opacity: 1;
+    max-width: 220px;
+}
+.tooltip-arrow::before {
+    border-top-color: $SiderbarItemBlack;
+}
+.custom-tooltip {
+    width: max-content;
+    .tooltip-inner{
+    width: max-content;
+}}

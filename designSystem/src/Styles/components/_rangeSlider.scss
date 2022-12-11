@@ -1,0 +1,74 @@
+.range-slider-container {
+    display: flex;
+    width: 100%;
+    height: 50px;
+}
+.slider {
+    height: 0.25rem;
+    width: 100%;
+    border-radius: 4px;
+    align-self: center;
+}
+.range-pointer {
+    height: 1.53125rem;
+    width: 1.53125rem;
+    border-radius: 50%;
+    background-color: $WhiteColor;
+    cursor: pointer !important;
+    box-shadow: 0px 3px 6px 0px rgb(140 152 164 / 25%);
+    transform: scale(1.8rem);
+}
+// .range-pointer:focus{
+// height: 1.7rem;
+// width:1.7rem;
+// border-radius: 50%;
+// cursor: pointer !important;
+// background-color: $WhiteColor;
+// box-shadow: 0px 3px 6px 0px rgb(140 152 164 / 25%);
+// transform: scale(1.3rem);
+// }
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid $WhiteColor;
+    bottom: 2rem;
+}
+.range-tooltip {
+    bottom: 2.25rem;
+    display: inline-block;
+    min-width: 2.5rem;
+    background-color: $WhiteColor;
+    @include Text-font-style($BlackText, $PrimaryFont, null, 400, 0.8125rem, null);
+    text-shadow: none;
+    text-align: center;
+    border-radius: 0.3125rem;
+    padding: 0.5rem 0.5rem;
+    box-shadow: 0px 3px 6px 0px rgb(140 152 164 / 25%);
+}
+.ruler-limiter {
+    height: 0.75rem;
+    width: 0.1rem;
+    margin-bottom: 0.75rem;
+    background-color: $InputFilterBorder;
+}
+.ruler-value {
+    @include Text-font-style($PriceFilterInterval, $PrimaryFont, normal, 400, 0.875rem, 9px);
+    left: -8px;
+}
+.second-ruler-value {
+    margin-left: 2.25rem;
+}
+.third-ruler-value {
+    margin-left: 0.95rem;
+}
+.forth-ruler-value {
+    margin-left: 0.55rem;
+}
+.fifth-ruler-value {
+    right: -1.7rem;
+}
+.range-value-step {
+    align-items: flex-start;
+}

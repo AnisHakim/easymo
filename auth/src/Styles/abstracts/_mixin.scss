@@ -1,0 +1,60 @@
+@mixin Text-font-style($color, $font-family, $font-style, $font-weight, $font-size, $line-height) {
+    color: $color;
+    font-family: $font-family;
+    font-style: $font-style;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+}
+
+@mixin Display($fontSize, $fontWeight, $lineHeight) {
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    line-height: $lineHeight;
+}
+
+@mixin Button-color($color, $bg-color, $border-color, $box-shadow) {
+    color: $color;
+    background-color: $bg-color;
+    border-color: $border-color;
+    box-shadow: $box-shadow;
+  }
+
+  @mixin Text-font-style(
+  $color,
+  $font-family,
+  $font-style,
+  $font-weight,
+  $font-size,
+  $line-height
+) {
+  color: $color;
+  font-family: $font-family;
+  font-style: $font-style;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+@mixin space-x($space) {
+    > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-x-reverse: 0;
+        margin-right: calc($space * var(--tw-space-x-reverse));
+        margin-left: calc($space * calc(1 - var(--tw-space-x-reverse)));
+        display: flex;
+    }
+}
+
+@mixin Input-font-style($font-family, $font-style, $font-weight, $font-size, $line-height) {
+    font-family: $font-family;
+    font-style: $font-style;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+}
+@mixin border-radius($border) {
+    border-radius: $border;
+    -webkit-border-radius: $border;
+    -moz-border-radius: $border;
+    -ms-border-radius: $border;
+    -o-border-radius: $border;
+  }

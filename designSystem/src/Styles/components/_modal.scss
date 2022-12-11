@@ -1,0 +1,274 @@
+.modal-content {
+    border: none;
+    @include border-radius(0.75rem);
+}
+.container-modal-confirmation {
+    background-color: $WhiteColor;
+    @include border-radius(0.75rem);
+}
+.header-modal-confirmation {
+    padding: 2rem 1.5rem 0.5rem 1.5rem;
+    text-align: center;
+    p {
+        margin: 0;
+        margin-left: 0.5rem;
+    }
+}
+.content-modal-confirmation {
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
+    font-weight: bold;
+    color: $DarkGrey;
+    p {
+        margin: 0;
+        color: $DarkGrey;
+    }
+    border-bottom: 0.0625rem solid $InputFilterBorder;
+}
+.footer-modal-confirmation {
+    padding: 1.25rem;
+}
+.btn-clear-modal-confirmation {
+    color: $HeaderGreyIcon;
+    border-color: $InputFilterBorder;
+}
+.btn-clear-modal-confirmation:hover {
+    background-color: $HeaderGreyIcon;
+    border-color: $HeaderGreyIcon;
+}
+.content-modal-info {
+    padding: 2rem;
+    font-weight: bold;
+    min-height: 200px;
+    p {
+        padding-top: 1rem;
+    }
+}
+.modal-backdrop {
+    background-color: rgba(19, 33, 68, 0.25);
+}
+.modal-backdrop.show {
+    opacity: 1;
+}
+.border-top-container {
+    border-top: 0.0625rem solid $InputFilterBorder;
+}
+.padding-input-modal-files {
+    padding-bottom: 2rem;
+}
+.padding-input-modal-files-error {
+    padding-bottom: 1rem;
+}
+.padding-modal-files {
+    padding: 1.25rem 2rem;
+}
+.cancel-btn-modal {
+    color: $Red;
+    border-color: $Red;
+}
+.cancel-btn-modal:hover {
+    color: $WhiteColor;
+    background: $Red;
+}
+.add-contact-cancel-button {
+    padding: 0.6rem 0.875rem;
+}
+.modal-add-contact-content {
+    padding: 1.5rem;
+}
+.modal-add-contact-title {
+    @include Text-font-style($BlackText, $PrimaryFont, normal, 600, 1.2rem, 1.4);
+}
+.modal-add-contact-label {
+    @include Text-font-style($BlackText, $PrimaryFont, normal, 600, 0.875rem, 1.6);
+}
+.add-contact-select,
+.add-contact-input {
+    height: calc(1.6em + 1.21875rem);
+    padding: 0.54688rem 0.875rem;
+    @include Text-font-style($BlackText, $PrimaryFont, normal, 400, 0.875rem, 1.4);
+    border-radius: 0.3125rem;
+}
+.add-contact-select {
+    padding: 0;
+}
+.add-contact-header {
+    height: 128px;
+    position: relative;
+    border-top-right-radius: 0.6875rem;
+    border-top-left-radius: 0.6875rem;
+}
+.bg-blue-linear {
+    position: absolute;
+    top: 0;
+    height: 128px;
+    svg {
+        width: 100%;
+        height: auto;
+        border-top-right-radius: 0.6875rem;
+        border-top-left-radius: 0.6875rem;
+    }
+}
+.white-contact-header {
+    bottom: 0;
+    width: 100%;
+}
+.close-modal-contact {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0.75rem;
+    right: 0.75rem;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    svg {
+        width: 16px;
+        height: 16px;
+        color: $SignupGreyBg;
+    }
+}
+.close-modal-contact:hover {
+    border-radius: 0.25rem;
+    background-color: rgba(249, 250, 252, 0.1);
+}
+.contact-header-icon {
+    z-index: 99999;
+    border-radius: 50%;
+    width: 3.36875rem;
+    height: 3.36875rem;
+    background: $SignupGreyBg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 0px 3px 6px 0px rgb(140 152 164 / 25%);
+    margin-top: -3rem;
+    svg {
+        width: 27.56px;
+        height: 27.2px;
+        color: $BlackText;
+    }
+}
+.add-contact-modal-footer {
+    padding: 1.25rem;
+    border-top: 0.0625rem solid #e7eaf3;
+}
+.upload-modal-body {
+    padding: 1rem 1.5rem;
+}
+.dashed-container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    border: 0.1rem dashed #e7eaf3;
+    cursor: pointer;
+    padding: 3rem 3rem;
+    border-radius: 0.3125rem;
+    transition: 0.3s;
+}
+.dashed-container:hover {
+    background: $backgroundDisabledInput;
+}
+
+.add-folder-cancel-btn {
+    height: 41.9px;
+}
+.document-home-icon {
+    height: 16px;
+    width: 16px;
+    color: $Grey;
+}
+.document-home-icon:hover {
+    height: 16px;
+    width: 16px;
+    color: $FilterBlue;
+}
+.document-upload-file {
+    padding: 0.4375rem 0.65625rem;
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+}
+.document-input-upload,
+.document-input-upload::-webkit-file-upload-button {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: $transparentColor;
+    color: $transparentColor;
+    border: 0;
+}
+.document-upload-img {
+    height: 78.75px;
+    width: 90px;
+    svg {
+        height: 100%;
+        width: 100%;
+    }
+}
+.document-upload-file-text {
+    @include Text-font-style($BlackColor, $PrimaryFont, normal, 600, 1rem, 1.4);
+}
+.document-upload-file-ou {
+    @include Text-font-style($Grey, $PrimaryFont, normal, 400, 0.875rem, 1.4);
+}
+.doc-upload-tab-select {
+    width: 166px;
+}
+.doc-upload-tab-input {
+    width: 120px;
+}
+
+.doc-upload-tab-auto-complete .default-select .css-1s2u09g-control,
+.doc-upload-tab-auto-complete .default-select .css-1s2u09g-control:focus {
+    width: 400px;
+    min-height: 41.9px !important;
+    @include Text-font-style($Grey, $PrimaryFont, normal, 400, 0.875rem, 1.4);
+}
+.doc-upload-input {
+    @include Text-font-style($Grey, $PrimaryFont, normal, 400, 0.875rem, 1.4);
+    height: calc(1.6em + 1.21875rem);
+}
+.check-mark-sucess {
+    color: $DarkGreen;
+    height: 16px;
+    width: 15.75px;
+}
+.file-tab-image {
+    height: 16px;
+    width: 16px;
+    svg {
+        height: 100%;
+        width: auto;
+    }
+}
+.tab-file-name {
+    @include Text-font-style($FilterBlue, $PrimaryFont, normal, 400, 0.875rem, 1.4);
+    @include truncate-text-horizontal(100%);
+    max-width: 200px;
+    width: max-content;
+}
+.tab-file-size {
+    @include Text-font-style($FilterBlue, $PrimaryFont, italic, 400, 0.8rem, 1.4);
+}
+.add-file-modal-container {
+    width: 1140px;
+}
+.upload-file-modal-container {
+    max-width: 550px;
+}
+.upload-file-tab-modal-container {
+    max-width: 1140px;
+}
+.ask-for-file-tab-modal-container {
+    max-width: 550px;
+}
+.ask-file-label {
+    @include Text-font-style($BlackColor, $PrimaryFont, normal, 600, 1rem, 1.4);
+}
+.ask-file-tooltip-icon {
+    height: 18px;
+    width: 18px;
+}

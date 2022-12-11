@@ -1,0 +1,47 @@
+.container-modal-add-equipement {
+    padding: 1.5rem;
+}
+.text-add-equipement {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.4;
+    font-family: $PrimaryFont;
+    color: $BlackText;
+}
+.label-input-add-equipement {
+    font-weight: 600;
+    cursor: pointer;
+    color: $BlackText;
+    font-family: $PrimaryFont;
+}
+.input-add-equipement{
+    height: calc(1.6em + 1.21875rem);
+    font-size: 0.875rem !important;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.select-add-equipement{
+    cursor: pointer;
+    height: calc(1.6em + 1.21875rem);  
+}
+.text-save-add-equipement{
+    font-size: 0.8125rem;
+}
+
+.cancel-button-add-equipement,
+.button-add-equipement {
+    padding: 0.54688rem 0.875rem;
+    line-height: 1.6;
+}
+
+.modal-dialog-add-equipement {
+    min-height: calc(100% - 3.5rem);
+}
+@media (min-width: 576px) {
+    .modal-dialog-add-equipement {
+        max-width: 400px;
+    }
+}

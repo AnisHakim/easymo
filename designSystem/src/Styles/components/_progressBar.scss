@@ -1,0 +1,28 @@
+.atom-progress {
+    display: flex;
+    height: 0.5rem;
+    overflow: hidden;
+    line-height: 0;
+    font-size: 0.65625rem;
+    border-radius: 0.3125rem;
+    color: #fff;
+    white-space: nowrap;
+    transition: width 0.6s ease;
+}
+
+.atom-progress-div {
+    border-radius: 0.5rem;
+    background: $InputFilterBorder;
+    height: 0.5rem;
+}
+.atom-legend-progress-container {
+    justify-content: space-between;
+    width: 100%;
+}
+.progress-percentage{
+    @include Text-font-style($WhiteColor, $PrimaryFont, normal, 400, 0.65625rem, 1.4);    
+}
+.progress-bar-file-upload{
+    height: 10px;
+}
+

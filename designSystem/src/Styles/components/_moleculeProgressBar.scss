@@ -1,0 +1,8 @@
+.signup-progress-bar-label {
+    @include Text-font-style($DarkGrey, $PrimaryFont, null, 600, 0.875rem, 1.6);
+    white-space: nowrap;
+}
+.label-progress-size {
+    width: 100%;
+    max-width: max-content;
+}

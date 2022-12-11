@@ -1,0 +1,93 @@
+.transaction-nav-text{
+   p {
+       @include Text-font-style($DarkGrey,$PrimaryFont ,normal ,400 ,0.875rem ,null);
+    }
+    padding: 1rem 1rem;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+}
+.transaction-nav-text:hover{
+   p {
+       @include Text-font-style($ButtonBlue,$PrimaryFont ,normal ,400 ,0.875rem ,null);
+    }
+    padding: 1rem 1rem;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+}
+.transaction-nav-text-active{
+   p {@include Text-font-style($ButtonBlue,$PrimaryFont ,normal ,400 ,0.875rem ,null);}
+    padding: 1rem 1rem;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom: 0.2rem solid $ButtonBlue;
+    margin-bottom: -0.1rem;
+}
+.transaction-navbar-number{
+   height: 21px;
+   width: 21px;
+   border-radius: 50%; 
+   background-color: $TransactionNumberBlue;
+   p {
+    @include Text-font-style($ButtonBlue,$PrimaryFont ,normal ,400 ,0.875rem ,null);
+ }
+}
+.transaction-nav-container{
+    border-bottom: 0.0625rem solid rgba(231, 234, 243, 0.7);
+}
+.compromis-container{
+    border: 0.0625rem solid rgba(231, 234, 243, 0.7);
+    box-shadow: 0px 6px 12px rgb(140 152 164 / 8%);
+    border-radius: 0.6875rem 0.6875rem 0 0;
+    background-color: $SignupGreyBg;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.compromis-header-container{
+    padding:2rem;
+    border-radius: 0.6875rem 0.6875rem 0 0;
+    @extend .transaction-nav-container
+}
+.compromis-title{
+    @include Text-font-style($BlackColor,$PrimaryFont ,normal ,600 ,1rem ,1);
+}
+.compromis-body-container{
+    padding:2rem;
+    border-radius: 0.6875rem 0.6875rem 0 0;
+}
+.upload-compromis{
+    cursor: pointer;
+    @include Button-color($ButtonBlue, rgba(55, 125, 255, 0.1), $transparentColor, none);
+    @include Text-font-style($ButtonBlue, $PrimaryFont, normal, 400, 0.8125rem, 1.5);
+    padding: 0.4375rem 0.65625rem;
+    @include border-radius(0.25rem);
+    svg{
+      color: $ButtonBlue;
+    }
+}
+.upload-compromis:hover {
+  @include Button-color($WhiteColor, $ButtonBlue, $transparentColor, 0 0.25rem 0.688rem rgba($ButtonBlue, 0.1));
+}
+
+.upload-compromis:focus,
+.upload-compromis:hover {
+  svg {
+    color: $WhiteColor !important;
+  }
+  @include Button-color($WhiteColor, $ButtonBlue, $transparentColor, 0 0.25rem 0.688rem rgba($ButtonBlue, 0.1));
+}
+.specific-emission-label{
+    margin-top: 22px;
+}
+@media screen and (max-width: 576px) {
+    .specific-emission-label{
+        margin-top: 0;
+    }
+}
+@media screen and (min-width: 1600px) {
+    .specific-emission-label{
+        margin-top: 0;
+    }
+}

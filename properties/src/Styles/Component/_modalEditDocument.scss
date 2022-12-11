@@ -1,0 +1,30 @@
+.label-input-modal-document {
+    @include Text-font-style($DarkGrey, $PrimaryFont, null, 600, 0.8125rem, 1.6);
+    cursor: pointer;
+}
+.tooltip-icon-modal-document {
+    width: 14.75px !important;
+    height: 16px !important;
+}
+.img-modal-document {
+    height: 500px;
+    width: 400px;
+}
+.icon-chevron-modal-document {
+    width: 30px;
+    height: 40px;
+    color: $ButtonBlue;
+}
+.modal-update-file{
+    max-width: 1140px;
+    max-height: 697px;
+}
+.update-document-body-modal{
+    height: 529px;
+    overflow-y: auto;
+}
+@media (min-width: 1600px){
+    .update-document-body-modal{
+        min-height: 653px;
+    } 
+}

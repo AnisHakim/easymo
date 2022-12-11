@@ -1,0 +1,42 @@
+
+.text-name-table-properties {
+    @include Text-font-style($DarkGrey, $PrimaryFont, normal, 600, 0.875rem, 1.6);
+}
+
+.name-table-properties {
+    padding-left: 0px;
+    padding-right: 0px;
+    cursor: pointer;
+    svg{
+        margin: 0;
+    }
+}
+
+.name-table-properties:hover,
+.name-table-properties:focus {
+    .text-name-table-properties {
+        color: $FilterBlue;
+    }
+}
+
+.name-table-properties-archived {
+    color: rgba(0, 0, 0, 0.26);
+}
+
+.archived-text-table-properties{
+    @include Text-font-style($HeaderGreyIcon, $PrimaryFont, normal, 600, 0.75rem, 1);
+    background-color: rgba(113, 134, 157, 0.1);
+    display: inline-block;
+    padding: 0.3125em 0.5em;
+    text-align: center;
+    @include border-radius(0.3125rem);
+}
+.text-name-table-properties {
+    margin-bottom:0;
+    margin-left:0;
+}
+@media screen and (min-width: 1330px) {
+    .text-name-table-properties { 
+        margin-left:1rem;
+    }  
+}

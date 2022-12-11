@@ -1,0 +1,3 @@
+.filter-text{
+    @include Text-font-style($Grey, $PrimaryFont, normal, 400, 0.8125rem, none);
+}

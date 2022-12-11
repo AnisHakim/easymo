@@ -1,0 +1,31 @@
+.txt-doc-viewer-style {
+    background-color: $WhiteColor !important;
+    height: calc(100% - 10px);
+    border:1px solid rgba($DarkGrey, 0.5);
+    color: $BlackColor;
+}
+#loading-renderer {
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.my-doc-viewer-style {
+    background-color: rgba($DarkGrey, 0.1) !important;
+    height: calc(100% - 10px);
+}
+.sc-llJcti {
+    justify-content: center !important;
+}
+.sc-llJcti a,
+.sc-llJcti button {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+.content-modal-file {
+   max-width: 90% !important;
+}
+.container-modal-file {
+    height: calc(100vh - 100px);
+    padding: 40px;
+}

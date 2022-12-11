@@ -1,0 +1,156 @@
+.basic-modal-header-video {
+  padding: 1rem 1.5rem 0 1.5rem;
+  align-items: center;
+  border-width: 0;
+  justify-content: space-between;
+  border-top-left-radius: 0.6875rem;
+  border-top-right-radius: 0.6875rem;
+}
+.img-modal-video {
+  width: 150px;
+  height: 80px;
+  border-radius: 0;
+}
+.icon-chevron-modal-video {
+  width: 30px;
+  height: 40px;
+  color: $Grey;
+}
+.border-right-modal {
+  border-right: none;
+}
+.basic-modal-header-text-video {
+  margin-bottom: 0;
+  line-height: 1.6;
+  font-size: 1.2rem;
+}
+.container-modal-video {
+  padding: 1.5rem;
+}
+.container-imgs {
+  position: relative;
+}
+.scroll-container-imgs {
+  overflow: auto;
+  white-space: nowrap;
+  width: calc(100% - 50px);
+}
+.overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.btn-delete-modal-media,
+.btn-delete-modal-media-2 {
+  @include Button-color($WhiteColor, $Red, $Red, null);
+  padding: 0.54688rem 0.875rem;
+}
+.btn-delete-modal-media:hover,
+.btn-delete-modal-media-2:hover,
+.btn-delete-modal-media-2:focus {
+  @include Button-color($WhiteColor, $btnDeleteHoverMedia, $btnDeleteHoverMediaHover, null);
+}
+.icon-delete-modal-media {
+  color: $WhiteColor;
+}
+.text-switch-modal-media {
+  @include Text-font-style($DarkGrey, $PrimaryFont, null, null, 0.8125rem, 1.6);
+}
+.text-modal-media {
+  @include Text-font-style($BlackText, $PrimaryFont, null, null, 0.8125rem, 1.6);
+}
+.label-input-modal-media {
+  @include Text-font-style($BlackText, $PrimaryFont, null, bold, 1rem, 1.6);
+}
+.disabled-input-modal-media.form-control:disabled {
+  background-color: $backgroundDisabledInput;
+  opacity: 1;
+}
+.container-footer {
+  padding: 1.25rem;
+}
+.cancel-btn-modal-media,
+.cancel-btn-modal-media:hover {
+  line-height: 1.6;
+  background-color: $transparentColor;
+  border: 0.0625rem solid $transparentColor;
+  padding: 0.54688rem 0.875rem;
+}
+.cancel-btn-modal-media:hover {
+  color: $DarkGrey;
+  box-shadow: none;
+}
+.container-add-img-media {
+  text-align: center;
+  border: 0.1rem dashed $InputFilterBorder;
+  cursor: pointer;
+  padding: 3rem;
+  @include border-radius(0.3125rem);
+  transition: 0.3s;
+}
+.img-media {
+  @include border-radius(0%);
+  border-top-left-radius: 0.6875rem;
+  border-top-right-radius: 0.6875rem;
+  object-fit: cover;
+  height: 128px !important;
+}
+.number-img-media {
+  @include Text-font-style($BlackText, $PrimaryFont, normal, 600, 0.75rem, 1);
+  @include border-radius(10rem);
+  background-color: $SignupGreyBg;
+  padding: 0.3125em 0.6em;
+}
+.icon-star-img-media-container {
+  top: 0.575rem;
+  right: 0.575rem;
+}
+.icon-star-img-media {
+  cursor: pointer;
+  width: 20px;
+  color: $DarkGrey;
+}
+.bg-yellow {
+  color: $Yellow;
+}
+.container-add-img-media:hover {
+  background-color: $backgroundDisabledInput;
+}
+@media (min-width: 576px) {
+  .modal-dialog-add-video {
+    max-width: 550px;
+    margin: 1.75rem auto;
+  }
+}
+@media (min-width: 768px) {
+  .border-right-modal {
+    border-right: 1px solid $InputFilterBorder;
+  }
+  .basic-modal-header-video {
+    padding: 2.25rem 2.25rem 0 2.25rem;
+  }
+  .container-modal-video {
+    padding: 2.25rem;
+  }
+  .container-footer {
+    padding: 1.25rem 2.25rem 2.25rem 2.25rem;
+  }
+}
+@media (min-width: 992px) {
+  .modal-dialog-add-video {
+    max-width: 800px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal-dialog-add-video {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+  .btn-delete-modal-media {
+    margin-top: 1rem;
+  }
+}

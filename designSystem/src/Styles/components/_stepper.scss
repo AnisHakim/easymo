@@ -1,0 +1,69 @@
+.stepper-txt {
+    @include Text-font-style($BlackText, $PrimaryFont, normal, 600, 1rem, null);
+    margin-bottom: 0;
+}
+.stepper-txt.signUp {
+    margin-right: 16px;
+}
+.divider {
+    // position: absolute;
+    top: 1.3125rem;
+    width: 100%;
+    height: 0.125rem;
+    // border-top: 0.125rem solid #e7eaf3;
+    background: $InputFilterBorder;
+    margin-left: 0.9375rem;
+    content: "";
+}
+.stepper-number {
+    @include Text-font-style($SiderbarItemBlack, $PrimaryFont, normal, 600, 0.85rem, null);
+    margin-bottom: 0;
+    width: 2.1875rem;
+    height: 2.1875rem;
+    border-radius: 50%;
+    background: $LoginStepperGrey;
+    margin-right: 1rem;
+    @extend .flex;
+    @extend .justify-center;
+    @extend .item-center;
+}
+.stepper-item {
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+}
+.stepper-number.active {
+    background: $ButtonBlue;
+    color: $WhiteColor;
+}
+.stepper-txt.active {
+    color: $ButtonBlue;
+}
+.text-divider-container {
+    width: calc(100% - 35px);
+    @extend .flex;
+    @extend .item-center;
+}
+.divider-phone {
+    display: none;
+}
+@media (max-width: 576px) {
+    .xs-column {
+        display: flex;
+        flex-direction: column;
+    }
+    .stepper-number {
+        // margin-bottom: 1rem;
+        margin-right: 1rem;
+    }
+    .xs-none {
+        display: none;
+    }
+    .divider-phone {
+        display: block;
+        height: 7.5px;
+        width: 0.125rem;
+        background: $InputFilterBorder;
+        margin: 4px 0;
+        margin-left: calc(17.5px + 0.9375rem);
+    }
+}

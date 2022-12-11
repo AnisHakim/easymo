@@ -1,0 +1,71 @@
+.h-32 {
+    height: 32rem;
+}
+.h-36 {
+    height: 36rem;
+}
+.white-svg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+.fpwd-back-txt:hover,
+.fpwd-back-txt:hover p {
+    color: $FilterBlue;
+}
+.fpwd-back-txt {
+    padding: 0.54688rem 0.875rem;
+    color: $ButtonBlue;
+    p {
+        color: $ButtonBlue;
+        line-height: 1.6;
+    }
+}
+.fpwd-back-icon {
+    width: 14px;
+    height: 14px;
+}
+.fpwd-logo {
+    width: 10.5rem;
+    height: 7.875rem;
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+}
+.fpwd-mail {
+    color: $BlackText;
+    line-height: 1.6;
+}
+.fpwd-btn {
+    span {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    button {
+        padding: 0.54688rem 1.5rem;
+        svg {
+            width: 16px !important;
+            height: 16px !important;
+            margin-right: 0.5rem;
+        }
+    }
+}
+.fpwd-resend {
+    color: $ButtonBlue;
+    :hover {
+        color: $FilterBlue;
+    }
+}
+.password-crit-list {
+    padding-left: 40px;
+    margin-bottom: 1rem;
+}
+
+.progress-bar-text {
+    @include Text-font-style($Grey, $PrimaryFont, italic, 400, 0.8125rem, null);
+}
+.label-progress-mb {
+    margin-bottom: 16px !important;
+}

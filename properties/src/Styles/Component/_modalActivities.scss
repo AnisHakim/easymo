@@ -1,0 +1,54 @@
+.color-activitie-point {
+    display: inline-flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    width: 1.53125rem;
+    height: 1.53125rem;
+    border-radius: 50%;
+    margin: 10px 0;
+    margin-right: 1rem;
+    margin-left: 0.328125rem;
+    background: $LoginStepperGrey;
+}
+.color-activitie-point .dark-blue-point {
+    background-color: $SiderbarItemBlack;
+    // margin-left: 0.25rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mt-10px {
+    margin-top: 10px;
+}
+.details-container {
+    background: $SignupGreyBg;
+    padding: 0.75rem 1.25rem;
+    border: 0.0625rem solid $InputFilterBorder;
+    width: 100%;
+    @include border-radius(0.3125rem);
+}
+.document-details-container {
+    background: $SignupGreyBg;
+    padding: 0.75rem 1.25rem;
+    border: 0.0625rem solid $InputFilterBorder;
+    width: 100%;
+    @include border-radius(0.3125rem);
+}
+.details-content {
+    @include Text-font-style($MiGrey, $PrimaryFont, null, 400, 13px, 20.8px);
+}
+.historique-document-name {
+    @include Text-font-style($BlackColor, $PrimaryFont, null, 600, 14px, 22.4px);
+}
+.historique-document-name:hover {
+    @include Text-font-style($ButtonBlue, $PrimaryFont, null, 600, 14px, 22.4px);
+}
+.historique-document-name-user {
+    @include Text-font-style($ButtonBlue, $PrimaryFont, null, 400, 11.2px, 17.9px);
+}
+.historique-document-image-media{
+    width: 112px;
+    height: 74.6px;
+    border-radius: 0.3125rem;
+}
+

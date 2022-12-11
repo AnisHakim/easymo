@@ -1,0 +1,6 @@
+image.tag: latest
+image.repo: easymo-frontend
+project: easymo
+app: back
+containerport: 9000
+host: dev.easymo.pixi.tn

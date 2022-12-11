@@ -1,0 +1,402 @@
+.container-table {
+    max-height: 2700px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.container-table-hidden {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.base-table {
+    color: $DarkGrey;
+}
+.offre-table {
+    color: $DarkGrey;
+}
+.base-table thead th,
+.base-table tbody td {
+    border-top: 0.0625rem solid rgba(231, 234, 243, 0.7);
+    border-bottom: 0.0625rem solid rgba(231, 234, 243, 0.7);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding-left: 1.3125rem;
+    padding-right: 1.3125rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    vertical-align: middle;
+    height: 55.5px;
+    font-family: $PrimaryFont;
+}
+.base-table tbody td {
+    font-size: 14px;
+    font-weight: 400;
+}
+.base-table thead th {
+    text-transform: uppercase;
+}
+.offre-table thead th,
+.offre-table tbody td {
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+}
+.table-border-last-element tbody tr:last-child {
+    border-top: 0.0625rem solid rgba(231, 234, 243, 0.7);
+}
+.offre-table tbody td {
+    font-size: 14px;
+    font-weight: 400;
+}
+.offre-table thead th {
+    text-transform: uppercase;
+}
+.table-col-checbox {
+    width: 40px !important;
+}
+.blue-tr {
+    background-color: $PropertiesRowBlue;
+}
+.th-sorting:after {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 0.7rem;
+    height: 0.7rem;
+    background: url("data:image/svg+xml,%3Csvg width='0.7rem' height='0.7rem' viewBox='0 0 292 375' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M131.965 15.3808C139.5 7.12345 152.5 7.12346 160.035 15.3808L262.976 128.193C274.106 140.39 265.453 160 248.941 160H43.0589C26.5474 160 17.8943 140.39 29.0238 128.193L131.965 15.3808Z' fill='%23dde1ee'/%3E%3Cpath d='M160.035 359.619C152.5 367.877 139.5 367.877 131.965 359.619L29.0238 246.807C17.8942 234.61 26.5473 215 43.0589 215L248.941 215C265.453 215 274.106 234.61 262.976 246.807L160.035 359.619Z' fill='%23dde1ee'/%3E%3C/svg%3E%0A");
+    content: "";
+    margin-left: 0.5rem;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: black;
+}
+.container-pagination {
+    color: $DarkGrey;
+}
+.item-pagination {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    @include border-radius(0.3125rem);
+    min-width: 2.25rem;
+    text-align: center;
+    padding: 0.5rem 0.75rem;
+}
+.item-pagination-active {
+    color: $WhiteColor;
+    background-color: $FilterOnHoverBlue;
+    border-color: $FilterOnHoverBlue;
+}
+.item-hover:hover {
+    color: $FilterOnHoverBlue;
+    text-decoration: none;
+    background-color: rgba($FilterOnHoverBlue, 0.1);
+    border-color: rgba($FilterOnHoverBlue, 0.1);
+}
+.item-pagination.disabled.item-hover:hover {
+    cursor: default;
+    color: $DarkGrey;
+    text-decoration: none;
+    background-color: $transparentColor;
+    border-color: $transparentColor;
+}
+.check-table input {
+    width: 16px;
+    height: 16px;
+}
+.container-check-table {
+    width: 16px;
+    height: 16px;
+}
+.base-table td .form-check-input,
+.base-table th .form-check-input {
+    margin-top: 0;
+    vertical-align: text-top;
+}
+.editable-table {
+    color: $DarkGrey;
+}
+.editable-table thead {
+    background-color: #f8fafd;
+}
+.editable-table thead th,
+.editable-table tfoot th,
+.editable-table tbody td {
+    min-width: 78.887px;
+    background-color: $PropertiesRowBlue;
+    border-color: rgba(231, 234, 243, 0.7);
+    border-top: 0.0625rem solid rgba(231, 234, 243, 0.7);
+    border-bottom: 0.0625rem solid rgba(231, 234, 243, 0.7);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding-right: 1.3125rem;
+    padding-left: 1.3125rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    font-family: $PrimaryFont;
+}
+.editable-table tbody td {
+    font-size: 14px;
+    font-weight: 400;
+    background-color: $WhiteColor;
+}
+.editable-table thead th {
+    text-transform: uppercase;
+}
+.editable-table tfoot th {
+    font-weight: 600;
+    color: $BlackText;
+}
+.editable-table thead .td-index,
+.editable-table tbody .td-index {
+    padding-right: 0px;
+    padding-left: 1.3125rem;
+    width: 60px !important;
+    min-width: 60px !important;
+}
+.td-validation {
+    width: 78px;
+}
+.td-action {
+    width: max-content;
+}
+.td-validation {
+    svg {
+        margin: 0;
+    }
+}
+.btn-val-table {
+    padding: 0.565rem 0.625rem;
+}
+.btn-table-isValid {
+    color: #fff;
+    background-color: $DarkGreen;
+    border-color: $DarkGreen;
+    svg {
+        color: $WhiteColor;
+    }
+}
+.btn-table-isValid:focus,
+.btn-table-isValid:hover {
+    background-color: rgba(2, 139, 24, 0.905882);
+    svg {
+        color: $WhiteColor !important;
+    }
+}
+.btn-table-isInValid {
+    color: #fff;
+    background-color: $Red;
+    border-color: $Red;
+    svg {
+        color: $WhiteColor !important;
+    }
+}
+.btn-table-isInValid:focus,
+.btn-table-isInValid:hover {
+    background-color: #d61313;
+    svg {
+        color: $WhiteColor;
+    }
+}
+.btn-action-table,
+.btn-action-table-edit,
+.btn-action-table-delete {
+    padding: 0.4375rem 0.65625rem;
+    svg {
+        margin: 0;
+    }
+}
+.btn-action-table-edit {
+    svg {
+        color: $ButtonBlue;
+    }
+}
+.btn-action-table-delete {
+    svg {
+        color: $Red;
+    }
+}
+.btn-action-table-edit:hover {
+    svg {
+        color: $ButtonBlue !important;
+    }
+}
+.btn-action-table-delete:hover {
+    svg {
+        color: $Red !important;
+    }
+    background-color: rgba(236, 35, 35, 0.1);
+}
+.input-table {
+    padding: 0px 0.25rem;
+    width: 100%;
+    border: none;
+    @include border-radius(0);
+    font-size: 0.75rem !important;
+    font-weight: 600;
+    font-family: $PrimaryFont;
+    background-color: transparent;
+    box-shadow: none;
+}
+.input-table:focus {
+    border-bottom: 1px solid $DarkBlue;
+    background-color: transparent;
+    box-shadow: none;
+}
+.tr-accepted td {
+    color: $BlackText;
+    font-weight: 600 !important;
+    font-size: 14px;
+    border-top: 0.0625rem solid rgba(231, 234, 243, 0.7) !important;
+}
+.contact-list-name {
+    color: $FilterOnHoverBlue;
+}
+.contact-list-name:hover,
+.contact-list-name:hover {
+    color: $FilterBlue;
+}
+.and-separator {
+    color: $DarkGrey;
+}
+.common-contact-tooltip .custom-tooltip.tooltip-inner {
+    background: $WhiteColor !important;
+    border: 0.0625rem solid transparent;
+    border-radius: 0.75rem;
+    box-shadow: 0px 10px 40px 10px rgb(140 152 164 / 18%);
+    padding: 1.5rem;
+    div {
+        color: $DarkGrey !important;
+        font-size: 14px;
+    }
+    word-wrap: break-word;
+    line-break: auto;
+    word-break: normal;
+    word-spacing: normal;
+    white-space: normal;
+    max-width: 300px;
+    min-height: 70px;
+}
+
+.common-contact-tooltip {
+    margin-right: 20px;
+}
+.common-contact-tooltip .bs-tooltip-auto[data-popper-placement^="left"],
+.bs-tooltip-start {
+    padding: 0;
+}
+.common-contact-tooltip.show {
+    max-width: 300px !important;
+}
+.common-contact-tooltip .tooltip-arrow::before {
+    border-width: 0.4rem 0 0.4rem 0.4rem;
+    border-left-color: $WhiteColor;
+    width: 0.5rem;
+    height: 1rem;
+}
+.common-contact-tooltip .tooltip-arrow {
+    right: -6px;
+}
+.file-tab-icon {
+    height: 14.5px;
+    width: 14.5px;
+}
+.file-upload-tab-icon {
+    height: 14.5px;
+    width: 14.5px;
+    color: $ButtonBlue;
+}
+.file-icon-tab-container {
+    height: 35.5px;
+    width: 35.5px;
+}
+.file-icon-tab-container:hover,
+.file-icon-tab-container:hover {
+    background-color: rgba(55, 125, 255, 0.1);
+    box-shadow: 0 0.25rem 0.688rem rgb(236 35 35 / 10%);
+    border-radius: 0.25rem;
+    color: $ButtonBlue;
+}
+.editable-table {
+    .btn-success:hover,
+    .btn-success:focus {
+        color: $DarkGreen;
+        background-color: rgba(2, 177, 31, 0.1);
+        border-color: transparent;
+        box-shadow: 0 0.25rem 0.688rem rgb(2 177 31 / 10%);
+        svg {
+            color: $DarkGreen;
+        }
+    }
+    .btn-danger:hover,
+    .btn-danger:focus {
+        color: $Red;
+        background-color: rgba(236, 35, 35, 0.1);
+        border-color: transparent;
+        svg {
+            color: $Red;
+        }
+    }
+}
+.empty-text-container {
+    background-color: $PropertiesRowBlue;
+    color: $BlackColor;
+    padding: 0.8rem 1rem;
+    border-radius: 0.4rem;
+    margin-top: 12px;
+}
+.empty-tab-icon {
+    color: $BlackColor;
+    height: 15.75px;
+    width: 15.75px;
+}
+.icon-pagination {
+    width: 14.63px;
+    height: 15px;
+}
+
+.offre-table-status thead th,
+.offre-table-status tbody td {
+    padding: 0.3rem;
+    padding-right: 1.3125rem;
+    padding-left: 1.3125rem;
+}
+.offre-table-status tbody td {
+    font-size: 13px;
+    line-height: 22.8px;
+}
+.offre-table-status tbody td .btn-val-table {
+    padding: 6.55px 8px;
+    svg {
+        width: 14.63px !important;
+        height: 14.4px !important;
+    }
+}
+.offre-table .td-validation {
+    padding-left: 13px;
+}
+.status-pagination .item-pagination {
+    font-size: 13px;
+    font-family: $PrimaryFont;
+    height: 32.25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tab-title-status {
+    margin-bottom: 8px;
+}
+.editable-discard-btn {
+    right: 119px;
+}
+.editable-save-btn {
+    right: 21px;
+}
+// .add-file-tab{
+//     min-height: 314px;
+//     margin-top: 2.5px;
+//     padding: 0 2.5rem 2.5rem 2.5rem;
+// }
+
+// .add-file-tab tbody{
+//     height: auto;
+// }

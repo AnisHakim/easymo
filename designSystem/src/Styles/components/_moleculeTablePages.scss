@@ -1,0 +1,12 @@
+@media (min-width: 576px) {
+    .justify-content-sm-start {
+        -ms-flex-pack: start !important;
+        justify-content: flex-start !important;
+    }
+}
+
+
+.display-text {
+    @include Text-font-style($DarkGrey, $PrimaryFont, normal, 400, 0.875rem, 1.6);
+    text-align: left;
+}

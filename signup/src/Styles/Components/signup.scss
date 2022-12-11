@@ -1,0 +1,119 @@
+.signup-bold-text {
+    @include Text-font-style($BlackColor, $PrimaryFont, null, 600, calc(1.3rem + 0.6vw), 1.4);
+}
+.signup-discription-bold-text {
+    @include Text-font-style($BlackColor, $PrimaryFont, null, 600, 1.75rem !important, 1.4);
+}
+.already-have-account {
+    @include Text-font-style($DarkGrey, $PrimaryFont, normal, 400, 0.875rem, 1.6);
+    margin-right: 0.3rem;
+}
+.login-here {
+    @include Text-font-style($ButtonBlue, $PrimaryFont, normal, 400, 0.875rem, 1.6);
+}
+.login-here:hover,
+.login-here:focus {
+    @include Text-font-style($FilterBlue, $PrimaryFont, normal, 400, 0.875rem, 1.6);
+}
+.terms-and-conditions {
+    @include Text-font-style($ButtonBlue, $PrimaryFont, normal, 400, 0.8125rem, 1.6);
+    margin-left: 0.3rem;
+}
+.terms-and-conditions:hover,
+.terms-and-conditions:focus {
+    @include Text-font-style($FilterBlue, $PrimaryFont, normal, 400, 0.8125rem, 1.6);
+    margin-left: 0.3rem;
+}
+.terms-chckbox-label,
+.terms-chckbox-label:hover,
+.terms-chckbox-label:focus {
+    @include Text-font-style($Grey, $PrimaryFont, normal, 400, 0.8125rem, 1.6);
+    margin-left: 0.3rem;
+}
+.terms-chckbox-label.invalid,
+.terms-and-conditions.invalid {
+    color: $Red;
+}
+.signup-image {
+    width: 12rem;
+    height: 100%;
+    margin-top: 0.75rem;
+}
+.signup-grey-bold-discription {
+    @include Text-font-style($DarkGrey, $PrimaryFont, normal, 600, 0.875rem, 1.6);
+}
+.small-discription-container {
+    margin-bottom: 1.75rem;
+}
+.col-description-sing-up {
+    display: none;
+}
+.signup-logo {
+    top: 1rem;
+    left: 1rem;
+    min-width: 7rem;
+    max-width: 7rem;
+}
+.grey-background {
+    background: $SignupGreyBg;
+}
+.adress-input-label {
+    @include Text-font-style($Grey, $PrimaryFont, null, null, 0.875rem !important, null);
+}
+.information-agence {
+    @include Text-font-style($BlackColor, $PrimaryFont, null, 600, calc(1.25625rem + 0.075vw), 1.4);
+}
+.progress-bar-text {
+    @include Text-font-style($Grey, $PrimaryFont, italic, 400, 0.8125rem, null);
+}
+.select-employees .css-1s2u09g-control,
+.select-employees .css-1pahdxg-control {
+    height: 54px;
+}
+.signup-stepper {
+    .divider-phone {
+        margin-left: 17.5px;
+    }
+    .stepper-item {
+        padding: 0;
+    }
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+.final-step-text {
+    @include Text-font-style($BlackText, $PrimaryFont, null, 400, 0.875rem, 1.6);
+}
+.final-step-icon {
+    width: 21px;
+    height: 21px;
+    color: $BlackText;
+}
+.final-step-image {
+    width: 21rem;
+}
+.street-adress-container {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+.street-adress-container-col {
+    padding-left: 0;
+    padding-right: 0;
+}
+.street-number-container-col {
+    padding-left: 0;
+    padding-right: 0;
+}
+.street-code-container-col {
+    padding-left: 0;
+    padding-right: 0;
+}
+.stepper-container {
+    padding-top: 4.5rem;
+}
+.final-step-icon-text-container {
+    text-align: center;
+}
+.pswd-strength-label {
+    @include Text-font-style($DarkGrey, $PrimaryFont, null, 600, 14px, 22.4px);
+}

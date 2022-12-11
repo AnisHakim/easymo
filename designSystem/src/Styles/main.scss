@@ -1,0 +1,35 @@
+@charset "UTF-8";
+// @import "react-modern-drawer/dist/index.css";
+@import "bootstrap-daterangepicker/daterangepicker.css";
+// 1. Configuration and helpers;
+@import "react-phone-number-input/style.css";
+
+@import "abstracts/variable", "abstracts/mixin";
+
+// 2. Components
+
+//style for atoms
+@import "components/img", "components/text", "components/input", "components/progressBar", "components/button",
+    "components/checkBox", "components/collapse";
+
+//style for molecules
+@import "components/moleculeInput", "components/moleculeProgressBar", "components/table", "components/moleculeCard",
+    "components/moleculeHeader", "components/moleculeFilter", "components/moleculeTablePages",
+    "components/moleculeDatePicker", "components/moleculeNameTable", "components/modal", "components/crop",
+    "components/maps", "components/folderWithDropDown";
+
+@import "components/stepper", "components/select", "components/dropdownMolecul", "components/drawer";
+@import "components/sideBar", "components/navBar", "components/moleculeRadioButton", "components/tooltip",
+    "components/rangeSlider", "components/transactionNav", "components/moleculeInputSwitch", "components/dragUpload",
+    "components/file";
+
+//style for organisms
+
+@import "abstracts/util";
+// 3. Break point
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+* {
+    scroll-behavior: smooth;
+}

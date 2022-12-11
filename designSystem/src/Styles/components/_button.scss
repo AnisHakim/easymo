@@ -1,0 +1,403 @@
+.default-btn {
+  border-radius: 0.3125rem;
+  border: 0.0625rem solid transparent;
+  cursor: pointer;
+  padding: 0.54688rem 0.875rem;
+  border-radius: 0.3125rem;
+  @include Text-font-style($WhiteColor, $PrimaryFont, normal, 400, 0.875rem, 1.6);
+}
+
+.btn-connexion {
+  @include Text-font-style($WhiteColor, $PrimaryFont, normal, 400, 1rem, 1.5);
+  @include Button-color($WhiteColor, $ButtonBlue, $ButtonBlue, none);
+  height: auto;
+  width: 100%;
+  padding: 0.875rem 1.09375rem;
+}
+
+.btn-connexion.hover,
+.btn-connexion:hover,
+.btn-connexion.focus,
+.btn-connexion:focus {
+  @include Button-color($WhiteColor, $OnHoverButtonBlueBg, $OnHoverButtonBlueBorder, none);
+}
+
+.btn-primary {
+  @include Text-font-style($WhiteColor, $PrimaryFont, normal, 400, 0.875rem, 1.6);
+  @include Button-color($WhiteColor, $ButtonBlue, $ButtonBlue, none);
+  height: auto;
+  width: 100%;
+}
+
+.btn-primary.hover,
+.btn-primary:hover,
+.btn-primary.focus,
+.btn-primary:focus {
+  @include Button-color($WhiteColor, $OnHoverButtonBlueBg, $OnHoverButtonBlueBorder, none);
+}
+
+.btn-secondary {
+  @include Button-color($ButtonBlue, rgba(55, 125, 255, 0.1), $transparentColor, none);
+  @include Text-font-style($ButtonBlue, $PrimaryFont, normal, 400, 0.8125rem, 1.5);
+  padding: 0.4375rem 0.65625rem;
+  @include border-radius(0.25rem);
+}
+
+.default-icon-btn {
+  color: $WhiteColor;
+  margin-right: 0.25rem;
+}
+
+.icon-connexion {
+  color: $WhiteColor;
+  margin-right: 0.5rem;
+}
+
+.icon-secondary {
+  color: $ButtonBlue;
+}
+
+.icon-primary-right {
+  margin-right: 0rem;
+  margin-left: 0.25rem;
+}
+
+.btn-ghost {
+  @include Button-color($HeaderGreyIcon, $transparentColor, $transparentColor, none);
+  border: 0.0625rem solid $transparentColor;
+  position: relative;
+}
+.btn-ghost:hover,
+.btn-ghost:focus {
+  @include Button-color($ButtonBlue, $transparentColor, $transparentColor, none);
+  border: 0.0625rem solid $transparentColor;
+  position: relative;
+}
+
+.icon-ghost {
+  @include Button-color($HeaderGreyIcon, $transparentColor, none, none);
+}
+.icon-ghost:hover,
+.icon-ghost:focus {
+  @include Button-color($ButtonBlue, $transparentColor, none, none);
+}
+
+.icon-third {
+  @include Button-color($ButtonBlue, $transparentColor, none, none);
+}
+
+.btn-ghost.hover,
+.btn-ghost:hover,
+.btn-ghost.focus,
+.btn-ghost:focus {
+  @include Button-color($ButtonBlue, rgba($ButtonBlue, 0.1), $transparentColor, none);
+}
+
+.btn-secondary.hover,
+.btn-secondary:hover {
+  @include Button-color($WhiteColor, $ButtonBlue, $transparentColor, 0 0.25rem 0.688rem rgba($ButtonBlue, 0.1));
+}
+
+.btn-secondary.focus,
+.btn-secondary:focus,
+.btn-secondary.hover,
+.btn-secondary:hover {
+  .icon-secondary {
+    color: $WhiteColor !important;
+  }
+  @include Button-color($WhiteColor, $ButtonBlue, $transparentColor, 0 0.25rem 0.688rem rgba($ButtonBlue, 0.1));
+}
+
+.btn-status {
+  display: inline-flex;
+  top: -0.4375rem;
+  right: -0.4375rem;
+  width: 1.313rem;
+  height: 1.313rem;
+  border: 0.125rem solid $WhiteColor;
+  padding: 0;
+  @include border-radius(50%);
+  @include Button-color($WhiteColor, $ButtonBlue, $WhiteColor, none);
+  @include Text-font-style($WhiteColor, $PrimaryFont, normal, 600, 0.71094rem, 1.5);
+}
+
+.btn-third {
+  @include Button-color($ButtonBlue, $transparentColor, $ButtonBlue, none);
+  position: relative;
+  border: 0.0625rem solid $ButtonBlue;
+}
+
+.btn-third.focus,
+.btn-third:focus,
+.btn-third.hover,
+.btn-third:hover {
+  .icon-third {
+    @include Button-color($WhiteColor, $transparentColor, none, none);
+  }
+  @include Button-color($WhiteColor, $ButtonBlue, $ButtonBlue, none);
+}
+
+.btn-delete {
+  @include Button-color($Red, $transparentColor, none, none);
+  border: 0.0625rem solid $transparentColor;
+}
+
+.btn-delete.focus,
+.btn-delete:focus,
+.btn-delete.hover,
+.btn-delete:hover {
+  @include Button-color($Red, rgba($Red, 0.1), none, none);
+}
+
+.icon-delete {
+  @include Button-color($Red, $transparentColor, none, none);
+}
+
+.btn-archive {
+  @include Button-color($HeaderGreyIcon, $transparentColor, none, none);
+  border: 0.0625rem solid transparent;
+}
+
+.icon-archive {
+  @include Button-color($HeaderGreyIcon, $transparentColor, none, none);
+}
+
+.btn-archive.hover,
+.btn-archive:hover,
+.btn-archive.focus,
+.btn-archive:focus {
+  @include Button-color($ButtonBlue, rgba($ButtonBlue, 0.1), none, none);
+  .icon-archive {
+    @include Button-color($ButtonBlue, $transparentColor, none, none);
+  }
+}
+
+.btn-danger {
+  @include Button-color($Red, rgba($Red, 0.1), $transparentColor, none);
+  padding: 0.4375rem 0.65625rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+}
+
+.icon-danger {
+  @include Button-color($Red, none, $transparentColor, none);
+}
+
+.btn-danger.hover,
+.btn-danger:hover,
+.btn-danger.focus,
+.btn-danger:focus {
+  @include Button-color($WhiteColor, $Red, $transparentColor, 0 0.25rem 0.688rem rgba($Red, 0.1));
+  .icon-danger {
+    @include Button-color($WhiteColor, none, $transparentColor, none);
+  }
+}
+
+.btn-inprogress {
+  @include Button-color($HeaderGreyIcon, $transparentColor, $transparentColor, none);
+  padding: 0.4375rem 0.65625rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+}
+
+.icon-inprogress {
+  @include Button-color($HeaderGreyIcon, none, $transparentColor, none);
+}
+
+.btn-inprogress.hover,
+.btn-inprogress:hover,
+.btn-inprogress.focus,
+.btn-inprogress:focus {
+  @include Button-color($WhiteColor, rgba($ButtonBlue, 0.1), $transparentColor, 0 0.25rem 0.688rem rgba($Red, 0.1));
+  .icon-inprogress {
+    @include Button-color($HeaderGreyIcon, none, $transparentColor, none);
+  }
+}
+
+.btn-success {
+  @include Button-color($DarkGreen, rgba($DarkGreen, 0.1), $transparentColor, none);
+  padding: 0.4375rem 0.65625rem;
+  line-height: 1.5;
+  @include border-radius(0.25rem);
+}
+.icon-success {
+  @include Button-color($DarkGreen, none, $transparentColor, none);
+}
+
+.btn-success.hover,
+.btn-success:hover,
+.btn-success.focus,
+.btn-success:focus {
+  @include Button-color($WhiteColor, $DarkGreen, $transparentColor, 0 0.25rem 0.688rem rgba($DarkGreen, 0.1));
+  .icon-success {
+    @include Button-color($WhiteColor, none, $transparentColor, none);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .delete,
+  .archive {
+    display: none;
+  }
+}
+@media screen and (max-width: 991px) {
+  .btn-add-agent {
+    span {
+      display: none;
+    }
+    svg {
+      margin: 0px;
+    }
+  }
+}
+
+.btn-filter {
+  padding: 0.4375rem 0.65625rem;
+  border-radius: 0.25rem;
+  @include Text-font-style($DarkGrey, $PrimaryFont, normal, 400, 0.875rem, 1.5);
+  @include Button-color($DarkGrey, $WhiteColor, $InputFilterBorder, none);
+}
+
+.btn-filter:hover,
+.btn-filter:focus {
+  color: $FilterBlue;
+  box-shadow: 0px 3px 6px -2px rgb(140 152 164 / 25%);
+  .icon-filter {
+    color: $FilterBlue;
+  }
+}
+.btn-left.active,
+.btn-between.active,
+.btn-right.active {
+  color: $FilterBlue;
+}
+.icon-filter {
+  color: $DarkGrey;
+}
+
+.btn-left {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.btn-between {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+.btn-right {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.btn-outline {
+  @include Text-font-style($ButtonBlue, $PrimaryFont, normal, 400, 0.75rem, 1.5);
+  @include Button-color($ButtonBlue, $transparentColor, $ButtonBlue, none);
+  display: inline-block;
+  border: 0.0625rem solid $ButtonBlue;
+  border-radius: 6.1875rem;
+  padding: 0.24063rem 0.65625rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-outline:hover,
+.btn-outline:focus {
+  .icon-outline {
+    color: $WhiteColor;
+  }
+  @include Button-color($WhiteColor, $ButtonBlue, $ButtonBlue, none);
+}
+
+.icon-outline {
+  color: $ButtonBlue;
+}
+.input-upload-btn {
+  border: 0;
+  outline: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.upload {
+  cursor: pointer;
+}
+.btn-upload {
+  cursor: pointer;
+}
+
+.btn-notification {
+  position: absolute;
+  top: -0.4375rem;
+  right: -0.4375rem;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 0.71094rem;
+  font-weight: 600;
+  width: 21px;
+  height: 21px;
+  color: $WhiteColor;
+  background-color: $ButtonBlue;
+  border: 0.125rem solid $WhiteColor;
+  padding: 0;
+  border-radius: 50%;
+  z-index: 1;
+}
+.spinner-border {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  vertical-align: text-bottom;
+  border: 0.25em solid $DarkGrey;
+  border-right-color: transparent;
+  border-radius: 50%;
+  -webkit-animation: .75s linear infinite spinner-border;
+  animation: .75s linear infinite spinner-border;
+}
+.spinner-border-sm {
+  width: 1rem;
+  height: 1rem;
+  border-width: 0.2em;
+}
+.white-small-spinner{
+  border-color: $WhiteColor;
+  border-right-color: $transparentColor;
+}
+.add-document_btn{
+  padding: 0.54688rem 0.875rem;
+  @include Text-font-style(null, $PrimaryFont, normal, 400, 0.875rem, 1.6);
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.upload-list-button{
+  width: 2.625rem;
+  height: 2.625rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-left: -0.0925rem;
+}
+.show>.btn-secondary.dropdown-toggle{
+  color: #fff;
+  background-color: $ButtonBlue;
+  border-color: transparent;
+  border: none;
+}
+.document-selection-btn{
+  padding: 0.4375rem 0.65625rem;
+  @include Text-font-style(null, $PrimaryFont, normal, 400, 0.8125rem, 1.5);
+    border-radius: 0.25rem;
+}
+.btn-crop{
+  padding: 0.4375rem 0.65625rem;
+}

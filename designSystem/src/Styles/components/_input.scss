@@ -1,0 +1,361 @@
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+    display: none;
+}
+.defaul-larg-input {
+    height: calc(1.5em + 1.875rem);
+}
+.defaul-meduim-input {
+    height: calc(1.6em + 1.21875rem);
+}
+.default-input {
+    padding: 0.875rem 1.09375rem;
+    border-radius: 0.3125rem;
+    border: 0.0625rem solid $InputFilterBorder;
+    @include Text-font-style($BlackText, $PrimaryFont, null, null, 1rem !important, 1.5);
+}
+.invalid-input,
+.invalid-input:hover,
+.invalid-input:focus {
+    border-color: $Red;
+    box-shadow: 0 0 10px rgb(236 35 35 / 10%);
+}
+.valid-input,
+.valid-input:hover,
+.valid-input:focus {
+    border-color: $DarkGreen;
+    box-shadow: 0 0 10px rgb(2 177 31 / 10%);
+}
+.default-input:focus {
+    box-shadow: 0 0 10px rgb(55 125 255 / 10%);
+}
+.default-input::placeholder,
+.placeholder-label {
+    color: $InputPlaeholder !important;
+}
+.input-label {
+    display: block;
+    @include Text-font-style($BlackText, $PrimaryFont, null, null, 0.875rem, null);
+}
+.input-error-message {
+    @include Text-font-style($Red, $PrimaryFont, null, 400, 11.2px, 17.92px);
+    margin-top: 0.25rem;
+}
+.w-448 {
+    width: 448px;
+}
+.input-select {
+    padding-left: 12px;
+    padding-right: 36px;
+    position: relative;
+}
+.pswd-icon-container {
+    background: $transparentColor;
+    right: 0.875rem;
+    height: 52px;
+    top: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.password-icon-eyes {
+    margin-left: 16px;
+}
+.input-with-icon {
+    padding-left: 42px;
+}
+.input-with-counter {
+    padding-right: 65px;
+}
+.default-input.no-select {
+    height: 41.9px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.default-input.with-select {
+    border-radius: 0;
+    border-left: 0;
+    height: 41.9px;
+    padding: 0.54688rem 0.25rem;
+    text-align: center;
+    min-width: 30px;
+}
+.default-input.no-suffixe {
+    height: 41.9px;
+    border-top-right-radius: 0.3125rem;
+    border-bottom-right-radius: 0.3125rem;
+}
+.transaction-date-input {
+    height: 41.9px;
+}
+.fake-disabled.input::placeholder {
+    font-size: 13px;
+}
+.fake-disabled.input {
+    font-size: 14px !important;
+}
+@media (max-width: 576px) {
+    .pswd-icon-container {
+        background: $WhiteColor;
+    }
+}
+.drawer-postal-code {
+    height: calc(1.6em + 1.21875rem);
+    @include Text-font-style($BlackText, $PrimaryFont, null, 400, 0.875rem, 1.6);
+}
+.suffix-grp-input {
+    border-radius: 0.3125rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: 0.0625rem solid $InputFilterBorder;
+    border-left: 0;
+    display: flex;
+    align-items: center;
+    padding: 0.54688rem 0.875rem;
+    @include Text-font-style($DarkGrey, $PrimaryFont, null, 400, 0.875rem, 1.6);
+}
+svg:focus {
+    outline: none;
+}
+
+.default-input-custom {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.ql-toolbar.ql-snow + .ql-container.ql-snow {
+    div {
+        @include Text-font-style($BlackText, $PrimaryFont, null, 400, 0.875rem, 1.6);
+        padding: 0;
+    }
+}
+.ql-container.ql-snow {
+    @extend .default-input;
+    border: 0.0625rem solid #e7eaf3 !important;
+    border-radius: 0;
+    border-bottom: 0 !important;
+    border-top-left-radius: 0.3125rem;
+    border-top-right-radius: 0.3125rem;
+    padding: 0.54688rem 0.875rem;
+    height: 160px;
+}
+.ql-editor.ql-blank {
+    padding: 0;
+}
+.ql-toolbar.ql-snow {
+    border: 0.0625rem solid #e7eaf3 !important;
+    border-radius: 0;
+    border-bottom-left-radius: 0.3125rem;
+    border-bottom-right-radius: 0.3125rem;
+    padding: 0.75rem 1.3125rem !important;
+    svg {
+        width: 20px;
+        height: 20px !important;
+    }
+}
+.ql-snow .ql-tooltip {
+    position: fixed !important;
+    top: 20% !important;
+    left: 50% !important;
+    z-index: 1;
+    min-width: 20rem !important;
+    border-width: 0;
+    text-align: center;
+    box-shadow: 0px 10px 40px 10px rgb(140 152 164 / 18%) !important;
+    padding: 1.5rem 1.5rem !important;
+    border-radius: 0.3125rem !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid $transparentColor !important;
+}
+.ql-snow .ql-tooltip[data-mode="link"]::before,
+.ql-snow .ql-tooltip::before {
+    display: block;
+    text-align: center;
+    font-family: $PrimaryFont;
+    font-weight: 600;
+    font-size: 1rem;
+    border-bottom: 0.0625rem solid $InputFilterBorder;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    margin-right: 0;
+    width: 100%;
+}
+.ql-snow .ql-tooltip a {
+    display: inline-block;
+    color: #fff;
+    background-color: #377dff;
+    font-size: 0.875rem;
+    line-height: normal;
+    padding: 0.875rem 1.09375rem;
+    border-radius: 0.3125rem;
+    transition: 0.3s;
+    width: max-content !important;
+}
+.ql-snow .ql-tooltip.ql-editing a.ql-action::after {
+    margin: 0;
+}
+.ql-snow .ql-tooltip a:hover {
+    background-color: #1366ff;
+}
+.ql-snow .ql-tooltip a.ql-action::after {
+    border: 0 !important;
+    margin: 0 !important;
+}
+.ql-snow .ql-tooltip.ql-editing input[type="text"],
+.ql-snow .ql-tooltip a.ql-preview {
+    height: auto;
+    display: block;
+    font-family: $PrimaryFont;
+    min-width: 20rem;
+    font-size: 1rem !important;
+    line-height: normal;
+    border: 0.0625rem solid $InputFilterBorder !important;
+    padding: 0.875rem 1.09375rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0.3125rem;
+    transition: 0.3s;
+    outline: none;
+    background: transparent !important;
+    color: $BlackText;
+}
+.ql-snow .ql-tooltip a.ql-preview {
+    color: $ButtonBlue;
+}
+.ql-snow .ql-tooltip a.ql-preview:hover {
+    border: 1px solid $ButtonBlue !important;
+}
+.ql-snow.ql-toolbar button:hover,
+.ql-snow.ql-toolbar button,
+.ql-snow .ql-toolbar button {
+    margin-right: 0.5rem;
+}
+.ql-remove {
+    margin-top: 5px;
+    border: 0.0625rem solid $InputFilterBorder !important;
+    color: $ButtonBlue !important;
+    background: $WhiteColor !important;
+    font-size: 0.875rem;
+    padding: 0.875rem 1.09375rem;
+    border-radius: 0.3125rem;
+    margin-left: 0.5rem;
+    transition: 0.3s;
+}
+.ql-snow .ql-stroke {
+    stroke: $HeaderGreyIcon !important;
+}
+.ql-snow.ql-toolbar button:hover .ql-stroke {
+    stroke: $ButtonBlue !important;
+}
+.ql-snow .ql-fill {
+    fill: $HeaderGreyIcon !important;
+}
+.ql-snow.ql-toolbar button:hover .ql-fill {
+    fill: $ButtonBlue !important;
+}
+.ql-editor.ql-blank::before {
+    @include Text-font-style($InputPlaeholder, $PrimaryFont, null, 400, 0.875rem, 1.6);
+    color: $InputPlaeholder !important;
+    font-family: $PrimaryFont !important;
+    font-style: 0.875rem !important ;
+    font-weight: 400 !important;
+    font-style: normal !important;
+}
+.ql-snow .ql-tooltip a.ql-action::after {
+    content: "Modifier" !important;
+}
+.ql-snow .ql-tooltip a.ql-remove::before {
+    content: "Supprimer" !important;
+    margin: 0 !important;
+}
+
+.ql-snow .ql-tooltip.ql-editing a.ql-action::after {
+    content: "Enregistrer" !important;
+}
+.ql-snow .ql-tooltip::before {
+    content: "Visiter lien:" !important;
+}
+.ql-snow .ql-tooltip[data-mode="link"]::before {
+    content: "Entrer lien:" !important;
+}
+
+.counter-input-icon:hover {
+    color: $FilterBlue;
+    box-shadow: 0px 3px 6px -2px rgb(140 152 164 / 25%);
+}
+.counter-input-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $DarkGrey;
+    width: 1.53125rem;
+    height: 1.53125rem;
+    background-color: $WhiteColor;
+    border: 0.0625rem solid $InputFilterBorder;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    svg {
+        width: 13.5px;
+        height: 13.6px;
+    }
+}
+.counter-container {
+    display: flex;
+    bottom: 9.2px;
+    right: 0;
+}
+.radio-search {
+    @include Text-font-style($Grey, $PrimaryFont, null, 400, 0.8125rem, 1.5);
+    background-color: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 0.0625rem solid #e7eaf3;
+    box-shadow: none;
+    border-radius: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+.radio-search:focus {
+    @include Text-font-style($Grey, $PrimaryFont, null, 400, 0.8125rem, 1.5);
+    border-color: rgba(55, 125, 255, 0.4);
+}
+
+.input-administratif .css-1s2u09g-control,
+.input-administratif .css-1pahdxg-control {
+    height: 41.9px;
+    font-size: 14px !important;
+}
+.adminitratif-text-area {
+    font-size: 0.875rem !important;
+    height: 109px;
+}
+.serach-icon-35{
+    top: 9.875px !important;
+    left: 14px !important;
+    width: 15.75px !important;
+    height: 16px !important;
+    color: $DarkGrey;
+    z-index: 1;
+}
+.search-input-35{
+//   @extend .default-input;
+    @include Text-font-style($Grey, $PrimaryFont, null, 400, 13px !important, 1.5);
+}
+.search-Input-with-border{
+    padding-left: 2.625rem;
+}
+.document-search-clear-icon{
+    top: 9.875px !important;
+    right: 0.6rem !important;
+    width: 15.75px !important;
+    height: 16px !important;
+    color: $DarkGrey;
+    z-index: 1; 
+}
+.add-folder-input-container{
+    padding: 1.5rem;
+}
+

@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.app }}
+  namespace: {{ .Values.namespace }}
+spec:
+  selector:
+    matchLabels:
+      project: {{ .Values.project }}
+      app: {{ .Values.app }}
+      tier: front-end
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        project: {{ .Values.project }}
+        app: {{ .Values.app }}
+        tier: front-end
+    spec: 
+      containers:
+      - name: reactjs
+        image: '{{ .Values.image.repo }}:{{ .Values.image.tag }}'
+        ports:
+        - containerPort: {{ .Values.containerport }} 

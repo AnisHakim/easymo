@@ -1,0 +1,92 @@
+.password-icon{
+    top:1.1rem;
+    right: 0.875rem;
+}
+.password-icon:hover,.password-icon:focus{
+    color:$FilterOnHoverBlue ;
+}
+.forgot-password-text{
+    @include Text-font-style($Grey, $PrimaryFont, null, null, 0.8125rem,null); 
+}
+.forgot-password-text:hover,.forgot-password-text:focus{
+    @include Text-font-style($FilterBlue, $PrimaryFont, null, null, 0.8125rem,null); 
+}
+.input-label{
+    display: block;
+    @include Text-font-style($BlackText, $PrimaryFont, null, null, 0.875rem,null)
+}
+.input-error-message{
+    @include Text-font-style($Red, $PrimaryFont, null, 400, 11.2px, 17.92px);
+    margin-top:0.25rem; 
+}
+.search-icon{
+    top:1.1rem;
+    left: 0; 
+}
+.search-input{
+    background-color: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 0.0625rem solid $InputFilterBorder;
+    box-shadow: none;
+    border-radius: 0;
+    padding-right: 0;
+    @include Text-font-style($BlackText, $PrimaryFont, null, 400, 0.875rem !important, 1.6);
+    padding-left:1.75rem;
+}
+.search-input:hover,.search-input:focus{
+    background-color: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding-right: 0;
+    @include Text-font-style($BlackText, $PrimaryFont, null, 400, 0.875rem !important, 1.6);
+    padding-left:1.75rem;
+}
+.PhoneInput{
+    *{  
+        box-shadow: none;
+        border: 0;
+        padding: 0;
+        outline: none;
+    }
+    input{
+        padding-left: 0.75rem;
+    }
+    .PhoneInputCountrySelectArrow{
+        border: 2px solid $BlackColor;
+        border-left-width: 0;
+        border-top-width: 0;
+        border-radius: 1px;
+        margin-left: 0.75rem;    
+    }
+    .PhoneInputCountryIcon--border{
+        // border: 0.0625rem solid #e7eaf3 !important;
+    }
+    @extend .default-input;
+    position: relative;
+}
+.PhoneInput--focus{
+    box-shadow: 0 0 10px rgb(55 125 255 / 10%);
+    border-color: $BorderInputBlue;
+}
+.PhoneInputCountry select{
+    // position: relative;
+}
+.PhoneInputCountry select:focus option{
+    // position:absolute;
+    // left: 0;
+    width: 1000px !important;
+    height: 1px;
+}
+.invalid-input .PhoneInput, .invalid-input.PhoneInput--focus{
+    border-color: $Red !important;
+    box-shadow: 0 0 10px rgb(236 35 35 / 10%) !important;
+}
+.valid-input .PhoneInput, .valid-input.PhoneInput--focus {
+    border-color: $DarkGreen !important;
+    box-shadow: 0 0 10px rgb(2 177 31 / 10%) !important;
+}

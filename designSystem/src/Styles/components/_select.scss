@@ -1,0 +1,266 @@
+.css-1okebmr-indicatorSeparator {
+    display: none;
+}
+.css-319lph-ValueContainer {
+    height: calc(1.6em + 1.21875rem);
+    padding: 0.54688rem 1.875rem 0.54688rem 0.875rem;
+}
+
+.css-1s2u09g-control {
+    box-shadow: none !important;
+    border: 0.0625rem solid $InputFilterBorder !important;
+}
+
+.css-1pahdxg-control:hover,
+.css-1s2u09g-control:hover {
+    border-color: $transparentColor;
+}
+.css-1pahdxg-control,
+.css-1s2u09g-control:focus,
+.css-1pahdxg-control:focus {
+    box-shadow: 0 0 10px rgb(55 125 255 / 10%) !important;
+    border-color: rgba(55, 125, 255, 0.4) !important;
+}
+
+.default-select {
+    @include border-radius(0.3125rem);
+    color: $BlackColor !important;
+}
+.default-select::placeholder {
+    color: $InputPlaeholder !important;
+}
+.default-select-option {
+    margin: 0px;
+    color: rgba($color: $BlackColor, $alpha: 0.6);
+    font-family: $PrimaryFont;
+    font-size: 14px;
+    line-height: 22.4px;
+}
+.padding-element-select {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.default-element-selected {
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+.default-element-selected,
+.default-select-option:hover {
+    cursor: pointer;
+    color: $BlackText;
+    background-color: $SelectGrey !important;
+    font-family: $PrimaryFont;
+    font-size: 14px;
+    line-height: 22.4px;
+    min-height: 38px !important;
+}
+.css-1v660p0-MenuList,
+.css-1v660p0-MenuList:hover {
+    cursor: pointer;
+    min-height: 38px !important;
+}
+.cloor-span-text {
+    min-height: 8px !important;
+    max-height: 8px !important;
+    width: 8px !important;
+    height: 8px !important;
+    @include border-radius(50%);
+    margin-right: 8px;
+}
+.multi-container-value {
+    height: 100%;
+    color: $BlackText;
+    background-color: $InputFilterBorder;
+    @include border-radius(4px);
+    padding: 0.3125rem 0.875rem;
+}
+.delete-option {
+    padding-left: 0.5rem;
+    @include Text-font-style($HeaderGreyIcon, $PrimaryFont, normal, bold, 0.76563rem, 1.4);
+}
+
+.css-14el2xx-placeholder {
+    color: $InputPlaeholder !important;
+}
+
+.invalid-input .css-1s2u09g-control,
+.invalid-input:focus .css-1pahdxg-control:focus,
+.invalid-input .css-1s2u09g-control:focus,
+.invalid-input:focus .css-b62m3t-container:focus {
+    border-color: $Red !important;
+    box-shadow: 0 0 10px rgb(236 35 35 / 10%);
+}
+
+.invalid-input .css-1pahdxg-control {
+    border-color: $Red !important;
+}
+.valid-input .css-1s2u09g-control {
+    border-color: $DarkGreen !important;
+    box-shadow: 0 0 10px rgb(2 177 31 / 10%);
+}
+.valid-input .css-1pahdxg-control {
+    border-color: $DarkGreen !important;
+    box-shadow: 0 0 10px rgb(2 177 31 / 10%);
+}
+.css-12jo7m5 {
+    @include Text-font-style(
+        $BlackText !important,
+        $PrimaryFont !important,
+        null,
+        400 !important,
+        0.875rem !important,
+        1.4 !important
+    );
+}
+
+.select-drawer-classname {
+    min-height: calc(1.6em + 1.21875rem);
+}
+.default-avatar-agent {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+}
+
+.agent-input {
+    min-height: 43px;
+}
+.agent-input .css-1x4rmg0-multiValue {
+    background-color: #e6e6e6 !important ;
+}
+.agent-input .css-1x4rmg0-multiValue:hover {
+    background-color: $HoverInputSelectedItem !important ;
+    div {
+        background-color: $HoverInputSelectedItem !important ;
+    }
+}
+.agent-input .css-1hb7zxy-IndicatorsContainer {
+    display: none !important;
+}
+.no-data-text {
+    @include Text-font-style($Red, $PrimaryFont, normal, 400, 0.7rem, 1.6);
+}
+.add-agent-separator-text {
+    @include Text-font-style($DarkGrey, $PrimaryFont, normal, 400, 0.875rem, 1.6);
+}
+.no-data-value {
+    @include Text-font-style($Red, $PrimaryFont, normal, 800, 0.7rem, 1.6);
+}
+.no-option-container:hover {
+    background-color: $InputFilterBorder;
+}
+.icon-with-tooltip,
+.icon-with-tooltip:focus {
+    height: 16px;
+    width: 16px;
+    color: $Grey;
+    outline: none !important;
+}
+.input-label-with-tooltip {
+    @include Text-font-style($BlackText, $PrimaryFont, normal, 400, 0.875rem, 1.6);
+}
+.agent-input .padding-element-select {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.agent-input .css-gg45go-NoOptionsMessage {
+    padding: 12px;
+}
+.agent-input .default-element-selected {
+    padding-top: 7px !important;
+    padding-bottom: 7px !important;
+}
+.agent-input .css-1jqbu51-MenuList,
+.agent-input .css-1v660p0-MenuList,
+.css-1v660p0-MenuList {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+.agent-btn-col {
+    padding-top: 30px;
+}
+.select-grp .css-319lph-ValueContainer {
+    padding-right: 0px !important;
+}
+
+.transaction-contact-input .css-319lph-ValueContainer {
+    min-height: 39.9px;
+    height: auto !important;
+}
+.transaction-contact-input .css-12jo7m5 {
+    padding: 1px;
+}
+.select-grp .css-1pahdxg-control,
+.select-grp .css-1s2u09g-control {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    height: 41.9px;
+    min-width: 129px;
+    width: max-content;
+}
+.icon-select {
+    width: 15.75px;
+    height: 16px;
+    color: $Grey;
+    margin-right: 0.5rem;
+}
+.css-6j8wv5-Input {
+    margin: 0px !important;
+}
+.css-6j8wv5-Input input {
+    padding-left: 2px;
+    padding-right: 2px;
+    position: absolute;
+    width: 100% !important;
+    font-family: $PrimaryFont !important;
+    font-size: 14px !important;
+}
+@media only screen and (max-width: 1100px) and (min-width: 992px) {
+    .select-grp .css-1pahdxg-control,
+    .select-grp .css-1s2u09g-control {
+        min-width: 100px;
+        width: 100px;
+    }
+}
+@media only screen and (max-width: 781px) and (min-width: 576px) {
+    .select-grp .css-1pahdxg-control,
+    .select-grp .css-1s2u09g-control {
+        min-width: 90px;
+        width: 90px;
+    }
+    .agent-btn-col {
+        padding-top: 30px;
+    }
+}
+@media (max-width: 576px) {
+    .agent-btn-col {
+        padding-top: 0;
+    }
+}
+.default-select .css-26l3qy-menu {
+    z-index: 9999;
+    box-shadow: none !important;
+    border: 0.0625rem solid #e7eaf3 !important;
+}
+.agent-input .css-26l3qy-menu {
+    z-index: 10;
+}
+.css-t2b475-MenuList,
+.css-1jqbu51-MenuList,
+.css-8p7sy8,
+.css-1ew0esf {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+.css-qc6sy-singleValue,
+.css-1s2u09g-control,
+.css-1pahdxg-control {
+    cursor: pointer !important;
+}
+.css-qc6sy-singleValue{
+    font-family: $PrimaryFont;
+}
+.css-8p7sy8,.css-8p7sy8:hover{
+    cursor: pointer;
+    min-height: 38px !important; 
+}

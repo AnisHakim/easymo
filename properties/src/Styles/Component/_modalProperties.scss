@@ -1,0 +1,527 @@
+.basic-modal-content {
+    position: relative;
+    width: 100%;
+    pointer-events: auto;
+    background-color: $WhiteColor;
+    background-clip: padding-box;
+    border: 0.0625rem solid transparent;
+    @include border-radius(0.75rem);
+    outline: 0;
+}
+.basic-modal-header {
+    padding: 16px 24px;
+    align-items: center;
+    border-width: 0;
+    justify-content: space-between;
+    border-top-left-radius: 0.6875rem;
+    border-top-right-radius: 0.6875rem;
+}
+.button-header-basic-modal {
+    width: 2.1875rem;
+    height: 2.1875rem;
+    padding: 0px;
+}
+.icon-header-basic-modal {
+    margin-right: 0px;
+    width: 20px !important;
+    height: 20px !important;
+    font-size: 1.25rem;
+}
+.basic-modal-header-text {
+    margin-bottom: 0;
+    line-height: 1.6;
+    font-size: 1.2rem;
+}
+
+.modal-organism-container {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 1.5rem;
+}
+.modal-container-step-three {
+    padding: 1.5rem;
+}
+.display-none-organism {
+    display: none;
+}
+.text-modal-organism-step-one {
+    font-size: 1rem;
+    font-weight: bold;
+    padding-bottom: 0px;
+    cursor: pointer;
+    color: $BlackText;
+    font-family: $PrimaryFont;
+}
+.text-with-icon-modal-step-two {
+    @include Text-font-style($BlackText, $PrimaryFont, normal, bold, 1rem, null);
+    padding-bottom: 0px;
+    cursor: pointer;
+    justify-content: left;
+}
+.icon-help-second-step {
+    color: $DarkGrey;
+    margin-left: 0.5rem;
+    width: 18px;
+    height: 17.5px;
+}
+.modal-static {
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+}
+.box-shadow-modal {
+    box-shadow: 0 0 10px $DarkGrey;
+}
+.modal-dialog-add-property {
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+    transform: none;
+    position: relative;
+    width: auto;
+    pointer-events: none;
+}
+.custom-checkbox-card {
+    position: relative;
+    height: 100%;
+    padding-left: 0;
+    margin-right: 0;
+}
+.custom-checkbox-card-text {
+    padding: 0.3125rem 0;
+    @include Text-font-style($DarkGrey, $PrimaryFont, normal, 400, 0.875rem, 1.6);
+}
+.custom-checkbox-card-text-checked {
+    color: $ButtonBlue;
+    font-weight: bold;
+}
+.custom-checkbox-card-input {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    padding: 0;
+    overflow: visible;
+}
+.custom-checkbox-card-label {
+    width: 80%;
+    z-index: 1;
+    margin-bottom: 0;
+}
+.boxsContainer {
+    margin: -0.5rem -1.4375rem;
+    padding-left: 0.5rem;
+}
+.boxsContainer > * {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.custom-checkbox-card-icon {
+    position: absolute;
+    top: 0rem;
+    right: 1.5rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    z-index: 1;
+    content: "";
+    color: $ButtonBlue;
+}
+.button-next-modal-organism-stepone {
+    width: auto;
+    margin-left: auto;
+}
+.modal-stepper {
+    padding: 0 24px;
+    width: 100%;
+    margin-bottom: 0.75rem;
+    margin-right: 0px;
+}
+.text-stepper {
+    font-size: 14px;
+}
+.step-container {
+    padding-left: 0px;
+    min-width: none;
+}
+.modal-add-property-img {
+    margin-left: 25%;
+}
+.modal-add-property-img svg {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border-style: none;
+    cursor: pointer;
+}
+.max-width-img-property {
+    max-width: 45%;
+}
+.input-identification-step-two {
+    @include Text-font-style(null, null, normal, 400, 0.875rem, 1.6);
+    height: calc(1.6em + 1.21875rem);
+}
+.form-row {
+    margin-right: -5px;
+    margin-left: -5px;
+}
+.select-status-identification-step-two {
+    width: 100%;
+    height: calc(1.6em + 1.21875rem);
+    @include Text-font-style($BlackText, null, normal, 400, 0.875rem, 1.6);
+    vertical-align: middle;
+}
+.option-select-status-identification {
+    height: 38px;
+}
+.invalid-type-text {
+    color: $Red;
+}
+.icon-search-proximity {
+    position: absolute;
+    left: 14px;
+    width: 15.75px;
+    height: 16px;
+    color: $DarkGrey;
+    z-index: 1;
+    bottom: 13px;
+    top: 15px;
+}
+.inputs-step-three,
+.inputs-add-occupation,
+.input-visits {
+    height: calc(1.6em + 1.21875rem);
+    padding: 0.54688rem 0.875rem;
+    font-size: 0.875rem !important;
+    font-weight: 400;
+    line-height: 1.6;
+}
+.input-visits {
+    margin-bottom: 2rem;
+}
+.inputs-add-occupation {
+    height: calc(1.6em + 1.3rem);
+}
+.cancel-button-step-three {
+    padding: 0.54688rem 0.875rem;
+    line-height: 1.6;
+}
+.error-msg-inputs {
+    margin-bottom: 0;
+}
+.modal-historique-content {
+    padding: 1rem;
+}
+.modal-historique-header {
+    padding: 1rem 1.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    p {
+        @include Text-font-style($BlackText, $PrimaryFont, null, 600, 1.2rem, 30.72px);
+        margin-bottom: 0;
+    }
+}
+.modal-historique-modification-header {
+    display: flex;
+    justify-content: space-between;
+    p {
+        @include Text-font-style($BlackText, $PrimaryFont, null, 600, 1.2rem, 30.72px);
+        margin-bottom: 0;
+    }
+}
+.close-modal-historique-icon {
+    color: $HeaderGreyIcon;
+    height: 20px;
+    width: 20px;
+}
+.close-modal-historique-container {
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border-radius: 0.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.close-modal-historique-container:hover {
+    svg {
+        color: $ButtonBlue;
+    }
+    background-color: $BackgrounColorGreyLigth;
+}
+.modal-historique {
+    max-width: 400px;
+}
+.modal-activitie {
+    max-width: 540px;
+}
+.modal-historique-modification {
+    max-width: 800px;
+}
+.modal-historique-modification-container {
+    padding: 3.25rem;
+}
+.modal-historique-modification-body {
+    height: 30rem;
+    overflow-y: auto;
+}
+.modal-historique-modification-divider {
+    border-top: 0.0625rem solid rgba(231, 234, 243, 0.7);
+}
+.afficher-plus {
+    height: 35.5px;
+}
+.modal-historique.status {
+    max-width: 550px;
+    width: 100%;
+}
+.modal-historique.status.option {
+    max-width: 800px;
+    width: 100%;
+}
+.modal-historique-body {
+    padding: 1.5rem;
+}
+.price-filter-historique {
+    @include border-radius(6.1875rem);
+    background-color: #f8fafd;
+    padding: 0.25rem 0.25rem;
+    display: flex;
+    margin: auto;
+    width: max-content;
+    margin-bottom: 3rem;
+    div {
+        padding: 0.4375rem 0.65625rem;
+    }
+}
+.btn-filter-historique-first {
+    margin-right: 0.5rem;
+}
+.btn-filter-historique:hover {
+    color: $ButtonBlue;
+}
+.btn-filter-historique {
+    @include border-radius(6.1875rem);
+    @include Text-font-style($DarkGrey, $PrimaryFont, null, 400, 0.8125rem, 20.8px);
+    cursor: pointer;
+}
+.btn-filter-historique.active {
+    color: $BlackText;
+    background-color: $WhiteColor;
+    box-shadow: 0px 3px 6px 0px rgb(140 152 164 / 25%);
+}
+.historique-date {
+    @include Text-font-style($DarkGrey, $PrimaryFont, null, 600, 11.2px, 17.92px);
+    margin-bottom: 4px;
+    text-transform: uppercase;
+}
+.left-icon-border {
+    border-left: 0.125rem solid #e7eaf3;
+    height: 0.53125rem;
+    margin-left: 1.09375rem;
+}
+.left-icon-border.second {
+    height: 15.7px;
+    margin-bottom: 4px;
+}
+.color-historique-point .point-color {
+    margin-left: -0.25rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+}
+.color-historique-point .point,
+.color-activitie-point .point {
+    margin-left: -0.25rem;
+    width: 0.25rem;
+    height: 0.25rem;
+    background-color: #97a4af;
+    border-radius: 50%;
+}
+.color-historique-point {
+    display: inline-flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.09375rem;
+    font-weight: 600;
+    width: 2.625rem;
+    height: 2.625rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+.second-title-historique {
+    margin-bottom: 0;
+    @include Text-font-style($BlackText, $PrimaryFont, null, 600, 1rem, 22.4px);
+}
+.receiver-name,
+.receiver-name .capitalize {
+    text-decoration: none;
+    @include Text-font-style($ButtonBlue, $PrimaryFont, null, 400, 0.8125rem, 18.2px);
+    margin-bottom: 0;
+    display: flex;
+    div {
+        color: $BlackText;
+        margin: 0 4px;
+    }
+}
+.receiver-name.activitie,
+.receiver-name.activitie .capitalize {
+    @include Text-font-style($ButtonBlue, $PrimaryFont, null, 400, 0.8125rem, 18.2px);
+    div {
+        color: $DarkGrey;
+        margin: 0 4px 0 0;
+    }
+}
+.blue-text-link {
+    color: $ButtonBlue;
+    font-weight: 400;
+}
+.receiver-name.activitie .capitalize:hover,
+.blue-text-link:hover {
+    color: $FilterBlue;
+}
+.by-subtitle {
+    @include Text-font-style($DarkGrey, $PrimaryFont, null, 400, 0.8125rem, 18.2px);
+    text-transform: capitalize;
+    margin-bottom: 0;
+}
+.normal-txt {
+    text-transform: none;
+}
+.historique-content {
+    max-height: 277px;
+    overflow: auto;
+    margin-bottom: 1rem;
+    scroll-behavior: smooth;
+}
+.more-result-btn,
+.more-result-btn:hover,
+.more-result-btn:focus {
+    border: 0.0625rem solid $InputFilterBorder;
+    padding: 0.54688rem 0.875rem;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    border-radius: 0.3125rem;
+    transition: all 0.2s ease-in-out;
+    background-color: $WhiteColor;
+    font-weight: 400;
+    color: $DarkGrey;
+    text-align: center;
+    svg {
+        color: $DarkGrey;
+    }
+}
+.more-result-btn:hover {
+    color: $FilterBlue;
+    svg {
+        color: $FilterBlue;
+    }
+    box-shadow: 0px 3px 6px -2px rgb(140 152 164 / 25%);
+}
+.status-historique-header {
+    font-size: 15.36px;
+    line-height: 24.576px;
+    font-family: $PrimaryFont;
+    font-weight: 400;
+    color: $BlackText;
+    svg {
+        color: $BlackText;
+        width: 12.8px;
+        height: 12.8px;
+        margin: 0 0.4375rem;
+    }
+}
+.dot-color {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    margin-right: 0.4375rem;
+}
+.hash-status,
+.hash {
+    text-decoration: line-through;
+}
+.hash-status,
+.current-status {
+    font-size: 12px;
+    line-height: 12px;
+    font-family: $PrimaryFont;
+    font-weight: 600;
+    padding: 0.3125em 0.6em;
+    border-radius: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--background);
+}
+
+.grenn-12-txt {
+    font-size: 12px;
+    line-height: 12px;
+    font-family: $PrimaryFont;
+    font-weight: 400;
+    color: $Green;
+}
+.status-modal-body {
+    padding: 1.5rem;
+}
+.status-modal-body.option-status {
+    padding: 2.25rem;
+}
+.modal-status .input-label {
+    font-size: 1rem;
+    font-weight: bold;
+}
+.modal-status .row.mb-5 {
+    margin-bottom: 0 !important;
+}
+.paginaation-status-container {
+    padding: 0.3rem 1.3125rem;
+}
+.status-pagination {
+    margin: 8px auto 16px;
+}
+@media (min-width: 992px) {
+    .modal-dialog-add-property {
+        max-width: 800px;
+    }
+    .select-status-identification-step-two {
+        width: 48.2%;
+    }
+    .step-container {
+        min-width: 280px;
+    }
+}
+@media (max-width: 991px) {
+    .modal-dialog-add-property {
+        max-width: 550px;
+    }
+    .modal-historique.status.option {
+        max-width: 550px;
+    }
+}
+@media (min-width: 576px) {
+    .modal-dialog-add-property {
+        margin: 0.75rem auto;
+        min-height: calc(100% - 3.5rem);
+    }
+    .modal-stepper {
+        padding: 0px 24px;
+    }
+    .input-visits {
+        margin-bottom: 0;
+    }
+}
+@media (min-width: 768px) {
+    .basic-modal-header {
+        padding: 2.25rem;
+    }
+    .modal-organism-container {
+        padding: 2.25rem;
+    }
+    .modal-container-step-three {
+        padding: 2.25rem;
+    }
+    .modal-stepper {
+        padding: 0 2.25rem;
+    }
+}

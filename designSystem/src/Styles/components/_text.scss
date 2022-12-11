@@ -1,0 +1,78 @@
+.text-h1 {
+    @include Text-font-style($BlackText, $PrimaryFont, normal, 600, 1.41094rem, 1.4);
+    margin-bottom: 0.5rem;
+}
+
+.text-h2 {
+    @include Text-font-style($BlackText, $PrimaryFont, normal, 600, 1.3125rem, 1.4);
+}
+
+.text-h3 {
+    @include Text-font-style($BlackText, $PrimaryFont, normal, 600, 1.14844rem, 1.4);
+}
+
+.text-h4 {
+    @include Text-font-style($BlackText, $PrimaryFont, normal, 600, 0.98438rem, 1.4);
+}
+
+.text-h5 {
+    @include Text-font-style($BlackText, $PrimaryFont, normal, 600, 0.875rem, 1.4);
+}
+
+.text-h6 {
+    @include Text-font-style($BlackText, $PrimaryFont, normal, 600, 0.76563rem, 1.4);
+}
+.display-1 {
+    @include Display(4.375rem, 600, 1.4);
+}
+.display-2 {
+    @include Display(3.5rem, 600, 1.4);
+}
+.display-3 {
+    @include Display(3.0625rem, 600, 1.4);
+}
+.display-4 {
+    @include Display(1.75rem, 600, 1.4);
+}
+.iconStartClass {
+    width: 14px;
+    height: 14px;
+}
+.color-span-text {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+}
+.placeholder-loading {
+    width: 100px;
+    margin-bottom: 0;
+    margin-left: 0.25rem;
+    border-radius: 4px;
+}
+
+.placeholder {
+    background: $Grey !important;
+}
+
+/* --------  @Media 1200  -------- */
+
+@media (max-width: 1200px) {
+    .text-h1 {
+        font-size: calc(1.26609rem + 0.19312vw);
+    }
+    .text-h2 {
+        font-size: calc(1.25625rem + 0.075vw);
+    }
+    .display-1 {
+        font-size: calc(1.5625rem + 3.75vw);
+    }
+    .display-2 {
+        font-size: calc(1.475rem + 2.7vw);
+    }
+    .display-3 {
+        font-size: calc(1.43125rem + 2.175vw);
+    }
+    .display-4 {
+        font-size: calc(1.3rem + 0.6vw);
+    }
+}
